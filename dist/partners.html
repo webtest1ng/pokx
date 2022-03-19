@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header__bg-inner">
+                <img class="header__bg" src="./images/header-bg.jpg" width="1400" height="200" alt="bg">
+            </div>
+
+
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="header__top">
+                       <a href="index.html"><img class="header__top-logo" src="./images/header-logo.png" width="184" height="68" alt="logo"></a> 
+                        <div class="search">
+                            <input type="text" name="search" placeholder="Поиск">
+                        </div>
+                        <div class="header__top-acc">
+                            <a data-fancybox data-src="#login" href=""><img src="./images/login.svg" alt="login"></a>
+                        </div>
+                    </div>
+                    <div class="search active container">
+                        <input type="text" name="search" placeholder="Поиск">
+                    </div>
+
+                    <div class="header__bottom">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header__menu-close">
+
+                        </div>
+                        <nav class="header__bottom-menu">
+                            <ul class="header__bottom-list">
+                                <li><a class="header__link" href="about.html">о нас</a></li>
+                                <li><a class="header__link" href="members.html">стать членом</a></li>
+                                <li><a class="header__link" href="comitets.html">комитеты</a></li>
+                                <li><a class="header__link" href="events.html">мероприятия</a></li>
+                                <li class="header__bottom-num"><a class="header__link" href="index.html">рокх</a></li>
+                                <li><a class="header__link" href="base.html">база знаний</a></li>
+                                <li><a class="header__link" href="news.html">новости</a></li>
+                                <li><a class="header__link" href="partners.html">партнеры</a></li>
+                                <li><a class="header__link" href="contacts.html">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------ POPUP------------------------>
+            <div class="header-popup" id="login">
+                <form action="" method="POST">
+                    <span class="header-popup__title">Для входа введите e-mail и пароль</span>
+                    <div class="header-popup__email">
+                        <label for="userEmail">Email
+                            <input name="email" type="email" id="userEmail" required>
+                        </label>
+                    </div>
+
+                    <div class="header-popup__pass">
+                        <label for="userPass">Пароль
+                            <input name="password" type="password" id="userPass" required>
+                        </label>
+                    </div>
+                    <div class="header-popup__check">
+                        <div class="header-popup__check-input">
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </div>
+                        <span><a>Я забыл пароль</a></span>
+                    </div>
+                    <button class="header-popup__btn" type="submit">Вход</button>
+
+                    <div class="header-popup__social">
+                        <div class="header-popup__social-reg">
+                            <span>Нет учетной записи?</span>
+                            <span><a>Зарегистрируйтесь.</a></span>
+                        </div>
+                        <div class="header-popup__social-comein">
+                            <span> Войти с помощью</span>
+                            <a><img src="./images/facebook.svg" alt="soc"></a>
+                            <a><img src="./images/google.svg" alt="soc"></a>
+                            <a><img src="./images/vk.svg" alt="soc"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+        <main class="content partners-content">
+            <div class="partners-content__inner bg__inner container">
+
+            
+
+            <section class="partners-first partners-first-slide">
+                
+                    <div class="partners-first__inner">
+                        <div class="partners-first__title">
+                            <h2>Партнеры</h2>
+                            <a class="partners-first__btn btn reg-link">Стать партнером</a>
+                        </div>
+
+                        <div class="partners-first__items">
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="partners-first">
+                                     
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+                            
+
+                        </div>
+
+                        <div class="partners-first__items-slide">
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="partners-first__item">
+                                <a class="partners-first__link" href="partners-card.html">
+                                    <div class="partners-first__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="partners-first">
+                                    </div>
+                                    <span class="partners-first__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+               
+            </section>
+
+
+
+            <section class="partners-second">
+              
+                <div class="partners-second__inner ">
+                    <div class="partners-second__title minititle-global">
+                        <h3>Стать партнером</h3>
+                    </div>
+                    <div class="partners-second__form reg-form" id="login">
+                        <form  method="POST" id="regForm">
+                            <span class="reg-form__title">Для входа введите e-mail и пароль</span>
+                            <div class="reg-form__surname reg-form__field">
+                                <label >Фамилия
+                                    <input name="surname" type="text" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__name reg-form__field">
+                                <label >Имя
+                                    <input name="name" type="text" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__name reg-form__field">
+                                <label >Отчество
+                                    <input name="patronymic" type="text" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__email reg-form__field">
+                                <label >Email
+                                    <input name="email" type="email" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__email-app reg-form__field">
+                                <label >Подтверждение E-mail
+                                    <input name="email" type="email" required>
+                                </label>
+                            </div>
+
+                            <div class="reg-form__tel reg-form__field">
+                                <label >Мобильный телефон
+                                    <input name="tel" type="tel" required>
+                                </label>
+                            </div>
+
+                            <div class="reg-form__pass reg-form__field">
+                                <label >Пароль
+                                    <input name="password" type="password" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__pass-app reg-form__field">
+                                <label >Подтверждение пароля
+                                    <input name="password" type="password" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__check">
+                                <div class="reg-form__check-input">
+                                    <input type="checkbox">
+                                    <span>Я даю согласие на <a class="reg-form__link">обработку персональных
+                                            данных</a></span>
+                                </div>
+                            </div>
+                            <button class="reg-form__btn" type="submit">Регистрация</button>
+
+                            <div class="reg-form__social">
+                                <div class="reg-form__social-reg">
+                                    <span>Нет учетной записи?</span>
+                                    <span><a>Зарегистрируйтесь.</a></span>
+                                </div>
+                                <div class="reg-form__social-comein">
+                                    <span> Войти с помощью</span>
+                                    <a><img src="./images/facebook.svg" alt="soc"></a>
+                                    <a><img src="./images/google.svg" alt="soc"></a>
+                                    <a><img src="./images/vk.svg" alt="soc"></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+               
+            </section>
+
+        </div>
+        </main>
+
+
+
+
+
+        <footer class="footer">
+            <img class="footer__bg" src="./images/footer-bg.jpg" width="1440" height="379" alt="footer-bg">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-items">
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Общество</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link">О РОКХ</a></li>
+                                    <li><a class="footer__link">Цель</a></li>
+                                    <li><a class="footer__link">Струтура</a></li>
+                                    <li><a class="footer__link">Комитеты</a></li>
+                                    <li><a class="footer__link">Контакты</a></li>
+                                    <li><a class="footer__link">Партнеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Членство</h3>
+                                </div>
+
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link">Преимущества</a></li>
+                                    <li><a class="footer__link">РОКХ в вашем городе</a></li>
+                                    <li><a class="footer__link">Внести членский взнос</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Обучение</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link">Онлайн-обучение</a></li>
+                                    <li><a class="footer__link">Мероприятия</a></li>
+                                    <li><a class="footer__link">Курсы повышения квалификации</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <span class="footer__left-big"><a>+7(495)230-10-34</a></span>
+                            <ul class="footer__left-list">
+                                <li>Фрунзенская</li>
+                                <li>Москва, ул.Погодинская, д.1, стр.1</li>
+                                <li><a class="footer__link">info@siterscs.com</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-personal">
+                            <div class="footer__left-personal-title">
+                                <h3>Обработка персональных данных</h3>
+                            </div>
+
+                            <p><a class="footer__link">Политика в отношении обработки персональных данных
+                                    Согласие на обработку персональных данных</a></p>
+                        </div>
+
+                        <span class="footer__right-date">© 2014 - 2022 Российское общество колоректальных
+                            хирургов</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/validate/jquery.validate.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

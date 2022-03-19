@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header__bg-inner">
+                <img class="header__bg" src="./images/header-bg.jpg" width="1400" height="200" alt="bg">
+            </div>
+
+
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="header__top">
+                        <a href="index.html"><img class="header__top-logo" src="./images/header-logo.png" width="184" height="68" alt="logo"></a>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="Поиск">
+                        </div>
+                        <div class="header__top-acc">
+                            <a data-fancybox data-src="#login" href=""><img src="./images/login.svg" alt="login"></a>
+                        </div>
+                    </div>
+                    <div class="search active container">
+                        <input type="text" name="search" placeholder="Поиск">
+                    </div>
+
+                    <div class="header__bottom">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header__menu-close">
+
+                        </div>
+                        <nav class="header__bottom-menu">
+                            <ul class="header__bottom-list">
+                                <li><a class="header__link" href="about.html">о нас</a></li>
+                                <li><a class="header__link" href="members.html">стать членом</a></li>
+                                <li><a class="header__link" href="comitets.html">комитеты</a></li>
+                                <li><a class="header__link" href="events.html">мероприятия</a></li>
+                                <li class="header__bottom-num"><a class="header__link" href="index.html">рокх</a></li>
+                                <li><a class="header__link" href="base.html">база знаний</a></li>
+                                <li><a class="header__link" href="news.html">новости</a></li>
+                                <li><a class="header__link" href="partners.html">партнеры</a></li>
+                                <li><a class="header__link" href="contacts.html">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------ POPUP------------------------>
+            <div class="header-popup" id="login">
+                <form action="" method="POST">
+                    <span class="header-popup__title">Для входа введите e-mail и пароль</span>
+                    <div class="header-popup__email">
+                        <label for="userEmail">Email
+                            <input name="email" type="email" id="userEmail" required>
+                        </label>
+                    </div>
+
+                    <div class="header-popup__pass">
+                        <label for="userPass">Пароль
+                            <input name="password" type="password" id="userPass" required>
+                        </label>
+                    </div>
+                    <div class="header-popup__check">
+                        <div class="header-popup__check-input">
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </div>
+                        <span><a>Я забыл пароль</a></span>
+                    </div>
+                    <button class="header-popup__btn" type="submit">Вход</button>
+
+                    <div class="header-popup__social">
+                        <div class="header-popup__social-reg">
+                            <span>Нет учетной записи?</span>
+                            <span><a>Зарегистрируйтесь.</a></span>
+                        </div>
+                        <div class="header-popup__social-comein">
+                            <span> Войти с помощью</span>
+                            <a><img src="./images/facebook.svg" alt="soc"></a>
+                            <a><img src="./images/google.svg" alt="soc"></a>
+                            <a><img src="./images/vk.svg" alt="soc"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+
+
+
+        <main class="content partners-card-content">
+            <div class="partners-card-content__inner bg__inner container">
+            <div class="partners-card-first__title  minititle-global ">
+                <h3>Общероссийская социальная сеть ВрачиРФ</h3>
+            </div>
+            <ul class="news-first__crumbs crumbs ">
+                <li><a href="./index.html">Главная</a></li>
+                <span>></span>
+                <li><a href="./partners.html">Партнеры</a></li>
+                <span>></span>
+                <li>Карточка партнера</li>
+            </ul>
+            <section class="partners-card-first">
+                <div class="partners-card-first__inner">
+                    <div class="partners-card-first__logo">
+                        <img src="images/partners-card-logo.png" alt="logo">
+                    </div>
+                    <div class="partners-card-first__banner">
+                        <img src="images/partners-card-big.png" alt="banner">
+                    </div>
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Сообщество «Врачи РФ» было создано в 2011 году независимыми специалистами при поддержке издательской группы «Регистр лекарственных средств России». Это единственное в России профессиональное сообщество медработников, объединенное с информационно-справочной системой лекарственных средств РЛС, которую используют в своей практике более 90% врачей.
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Одной из главных целей проекта было создать единую площадку с научными статьями, результатами клинических исследований, материалами научных конференций и общением врачей как между собой, так и с представителями медицинской и фарминдустрии.
+
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Благодаря интегрированным справочникам и словарям РЛС при создании любой публикации пользователь или компания могут связать свое сообщение с относящимися к нему препаратами и нозологиями (по классификации МКБ10). При этом, через словарь синонимических связей это сообщение также будет «привязано» к препаратам с тем же действующим веществом и к заболеваниям-синонимам.
+
+
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Зайдя в раздел «Публикации», вы увидите самые новые публикации в хронологическом порядке. В этом же разделе можно отсортировать материалы сайта по популярности (лидеры по числу показов и/или рейтингу), а так же сузить выдачу исключительно по какой-либо специализации.
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            В разделе "Выбор лекарств" можно найти любое зарегистрированное в Российской Федерации лекарственное средство и сразу перейти к публикациям, в которых упоминалось оно само или его действующее вещество. Если при этом компания-производитель препарата представлена в разделе "Партнеры", то можно сразу задать вопрос представителю компании или оставить свое мнение об этом лекарственном средстве. На страничке каждого препарата есть вкладка "Оценки", на которой можно ознакомиться с мнениями врачей об эффективности и безопасности препарата, а также увидеть, можно ли его чем-нибудь заменить.
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Как следует из названия раздела "Нозологии", в нем каталогизированы публикации по заболеваниям и синдромам (согласно МКБ10), также связанные с упоминаемыми в публикациях препаратами.
+
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Миссия проекта «Врачи РФ» –  вывести профессиональное общение врачей на новый уровень. Мы отправляем в прошлое устаревшие «бумажно-телефонные» принципы общения и разрозненный поиск справочной информации.
+                            .
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Сообщество «Врачи РФ» позволяет профессионалам своего дела получить заслуженное признание коллег и всего медицинского сообщества, помогая другим разбираться со сложными случаями и участвуя в дискуссиях. Это эффективный способ заявить о себе в профессиональной среде и, вполне возможно, получить интересные предложения к сотрудничеству от лучших лечебных учреждений, медицинских производственных компаний и фармбизнеса.
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            «Врачи РФ» закрытое сообщество, поскольку обсуждение врачами между собой профессиональных аспектов может быть ложно истолковано неподготовленными пользователями. Также, отсутствие посторонних позволяет врачам сосредоточиться на обсуждении интересующих их тем, не отвлекаясь на беседу с пациентами. О том, как мы подтверждаем статус врача, можно прочитать здесь.
+
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Мы рекомендуем врачам делиться интересными клиническими случаями. Это неиссякаемый источник практического опыта и повышения квалификации одновременно с возможностью передать накопленный опыт молодым коллегам. Докторам из регионов это позволяет получить консультацию специалистов крупных медицинских клиник или специализированных медцентров.
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Сообщество «Врачи РФ» стирает границы между участниками лечебного процесса: существенным отличием проекта является раздел Партнеры, где компании – производители лекарственных средств и медицинского оборудования могут размещать свою научную информацию и общаться с врачами. С развитием сообщества «Врачи РФ» работа медицинского представителя станет более эффективной и удобной для обеих сторон. Теперь врач может в любое время задать вопрос производителям лекарственных средств и медицинского оборудования, высказать свое отношение к их продукции и уточнить дополнительную информацию.
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Как и любой крупный и многогранный проект, разные составляющие единого целого иногда могут входить в противоречие друг с другом. В частности, это касается источников финансирования и связанных с этим конфликтов интересов. Администрация сообщества "Врачи РФ" считает необходимым декларировать основные принципы существования проекта на странице Источники финансирования и конфликт интересов.
+
+
+                        </p>
+                    </div>
+
+                    <div class="partners-card-first__text text-global">
+                        <p>
+                            Пользовательскиое соглашение и Условия использования авторских материалов, действующие в рамках домена vrachirf.ru, Согласие на обработку персональных данных, а также Редакционная политика сообщества "Врачи РФ" представлены на соответствующих страницах.
+                        </p>
+                    </div>
+
+
+                    <div class="partners-card-first__social">
+                        <a class="partners-card-first__social-vrach">https://vrachirf.ru/</a>
+                        <a class="partners-card-first__social-vk">club30242917</a>
+                        <a class="partners-card-first__social-facebook">vrachirf</a>
+                    </div>
+
+
+                    <div class="partners-card-first__title  minititle-global container">
+                        <h3>Продукция</h3>
+                    </div>
+
+
+                    <div class="partners-card-first__products">
+                        <div class="partners-card-first__product">
+                            <a><img src="images/partners-card-product.png" alt="producy"></a>
+                            <div class="partners-card-first__product-text">
+                                <span class="partners-card-first__product-title">Lorem ipsum</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+                            </div>
+                        </div>
+                        
+                        <div class="partners-card-first__product">
+                            <a><img src="images/partners-card-product.png" alt="producy"></a>
+                            <div class="partners-card-first__product-text">
+                                <span class="partners-card-first__product-title">Lorem ipsum</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+                            </div>
+                        </div>
+                        <div class="partners-card-first__product">
+                            <a><img src="images/partners-card-product.png" alt="producy"></a>
+                            <div class="partners-card-first__product-text">
+                                <span class="partners-card-first__product-title">Lorem ipsum</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+                            </div>
+                        </div>
+                        <div class="partners-card-first__product">
+                            <a><img src="images/partners-card-product.png" alt="producy"></a>
+                            <div class="partners-card-first__product-text">
+                                <span class="partners-card-first__product-title">Lorem ipsum</span>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+
+
+               
+
+                
+            </section>
+        </div>
+        </main>
+
+
+
+
+        <footer class="footer">
+            <img class="footer__bg" src="./images/footer-bg.jpg" width="1440" height="379" alt="footer-bg">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-items">
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Общество</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link">О РОКХ</a></li>
+                                    <li><a class="footer__link">Цель</a></li>
+                                    <li><a class="footer__link">Струтура</a></li>
+                                    <li><a class="footer__link">Комитеты</a></li>
+                                    <li><a class="footer__link">Контакты</a></li>
+                                    <li><a class="footer__link">Партнеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Членство</h3>
+                                </div>
+
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link">Преимущества</a></li>
+                                    <li><a class="footer__link">РОКХ в вашем городе</a></li>
+                                    <li><a class="footer__link">Внести членский взнос</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Обучение</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link">Онлайн-обучение</a></li>
+                                    <li><a class="footer__link">Мероприятия</a></li>
+                                    <li><a class="footer__link">Курсы повышения квалификации</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <span class="footer__left-big"><a>+7(495)230-10-34</a></span>
+                            <ul class="footer__left-list">
+                                <li>Фрунзенская</li>
+                                <li>Москва, ул.Погодинская, д.1, стр.1</li>
+                                <li><a class="footer__link">info@siterscs.com</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-personal">
+                            <div class="footer__left-personal-title">
+                                <h3>Обработка персональных данных</h3>
+                            </div>
+
+                            <p><a class="footer__link">Политика в отношении обработки персональных данных
+                                    Согласие на обработку персональных данных</a></p>
+                        </div>
+
+                        <span class="footer__right-date">© 2014 - 2022 Российское общество колоректальных
+                            хирургов</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/validate/jquery.validate.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

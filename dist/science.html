@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header ">
+            <div class="header__bg-inner">
+                <img class="header__bg" src="./images/header-bg.jpg" width="1400" height="200" alt="bg">
+            </div>
+
+
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="header__top">
+                        <a href="index.html"><img class="header__top-logo" src="./images/header-logo.png" width="184" height="68" alt="logo"></a>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="Поиск">
+                        </div>
+                        <div class="header__top-acc">
+                            <a data-fancybox data-src="#login" href=""><img src="./images/login.svg" alt="login"></a>
+                        </div>
+                    </div>
+                    <div class="search active container">
+                        <input type="text" name="search" placeholder="Поиск">
+                    </div>
+
+                    <div class="header__bottom">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header__menu-close">
+
+                        </div>
+                        <nav class="header__bottom-menu">
+                            <ul class="header__bottom-list">
+                                <li><a class="header__link" href="about.html">о нас</a></li>
+                                <li><a class="header__link" href="members.html">стать членом</a></li>
+                                <li><a class="header__link" href="comitets.html">комитеты</a></li>
+                                <li><a class="header__link" href="events.html">мероприятия</a></li>
+                                <li class="header__bottom-num"><a class="header__link" href="index.html">рокх</a></li>
+                                <li><a class="header__link" href="base.html">база знаний</a></li>
+                                <li><a class="header__link" href="news.html">новости</a></li>
+                                <li><a class="header__link" href="partners.html">партнеры</a></li>
+                                <li><a class="header__link" href="contacts.html">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------ POPUP------------------------>
+            <div class="header-popup" id="login">
+                <form action="" method="POST">
+                    <span class="header-popup__title">Для входа введите e-mail и пароль</span>
+                    <div class="header-popup__email">
+                        <label for="userEmail">Email
+                            <input name="email" type="email" id="userEmail" required>
+                        </label>
+                    </div>
+
+                    <div class="header-popup__pass">
+                        <label for="userPass">Пароль
+                            <input name="password" type="password" id="userPass" required>
+                        </label>
+                    </div>
+                    <div class="header-popup__check">
+                        <div class="header-popup__check-input">
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </div>
+                        <span><a>Я забыл пароль</a></span>
+                    </div>
+                    <button class="header-popup__btn" type="submit">Вход</button>
+
+                    <div class="header-popup__social">
+                        <div class="header-popup__social-reg">
+                            <span>Нет учетной записи?</span>
+                            <span><a>Зарегистрируйтесь.</a></span>
+                        </div>
+                        <div class="header-popup__social-comein">
+                            <span> Войти с помощью</span>
+                            <a><img src="./images/facebook.svg" alt="soc"></a>
+                            <a><img src="./images/google.svg" alt="soc"></a>
+                            <a><img src="./images/vk.svg" alt="soc"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+
+        <main class="content scince-content">
+            
+
+            <div class="scince-content__inner container">
+                <div class="scince-content__left sidebar">
+                    <div class="scince-content__left-menu  sidebar-menu">
+                        <div class="scince-content__logo sidebar-menu__logo">
+                            <img src="./images/logo-white.svg" alt="logo">
+                        </div>
+                        <div class="scince-content__nav sidebar-menu__nav">
+                            <ul class="scince-content__list sidebar-menu__list">
+                                <li class="">
+
+                                    <a class="scince-menu__first sidebar-menu__first" href="#scince-first">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C23.2843 0 30 6.71566 30 15C30 23.2843 23.2843 30 15 30C6.71573 30 0 23.2843 0 15C0 6.71566 6.71573 0 15 0ZM17.1268 7.95499V22.0449H13.3008V11.4775H13.2201L10.1367 13.3211V10.0763L13.6043 7.95499H17.1268Z" fill=""/>
+                                            </g>
+                                            </svg>
+                                            
+
+                                        Научный<br>
+                                        комитет
+                                    </a>
+                                </li>
+                                <li class=" ">
+
+
+                                    <a class="scince-menu__second sidebar-menu__second" href="#scince-second">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="1">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C23.2843 0 30 6.71564 30 15C30 23.2844 23.2843 30 15 30C6.71565 30 0 23.2844 0 15C0 6.71564 6.71565 0 15 0ZM9.73073 22.1401V19.3893L14.987 15.0403C15.3356 14.7529 15.6327 14.4785 15.8845 14.2267C16.1331 13.9716 16.3268 13.7069 16.4624 13.4389C16.5981 13.1677 16.6658 12.8675 16.6658 12.5381C16.6658 12.1732 16.5884 11.8633 16.4334 11.6082C16.2816 11.3499 16.0685 11.153 15.7974 11.0141C15.5262 10.8721 15.2162 10.8043 14.861 10.8043C14.5091 10.8043 14.1992 10.8753 13.9311 11.0174C13.66 11.1594 13.4533 11.3661 13.308 11.6438C13.1595 11.9182 13.0884 12.254 13.0884 12.6479H9.4562C9.4562 11.6567 9.67573 10.8043 10.1213 10.0876C10.5669 9.37079 11.1965 8.82196 12.0068 8.43773C12.8172 8.05024 13.7697 7.8598 14.861 7.8598C15.9911 7.8598 16.9693 8.0374 17.7959 8.39899C18.6224 8.75739 19.2649 9.26429 19.7137 9.91644C20.1657 10.5655 20.3917 11.3307 20.3917 12.2056C20.3917 12.748 20.2819 13.284 20.056 13.8199C19.83 14.3526 19.4264 14.9435 18.8452 15.5924C18.264 16.2382 17.4343 17.0098 16.3624 17.901L15.0419 19.002V19.0859H20.5436V22.1402H9.73073V22.1401Z" fill=""/>
+                                            </g>
+                                            </svg>
+                                            
+
+
+                                        Комитет по<br>
+                                        образованию<br>
+                                        и тренингу
+                                    </a>
+                                </li>
+
+                                <li class=" ">
+
+
+                                    <a class="scince-menu__third sidebar-menu__third" href="#scince-third">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C23.2844 0 30 6.71559 30 15C30 23.2843 23.2842 29.9999 15 29.9999C6.71561 29.9999 0 23.2843 0 15C0 6.71559 6.71561 0 15 0ZM14.9242 22.2372C13.8167 22.2372 12.832 22.0434 11.9699 21.6626C11.1112 21.2784 10.4364 20.7488 9.94562 20.0774C9.45483 19.4026 9.20633 18.6276 9.20301 17.7496H13.0548C13.0581 18.0207 13.1419 18.263 13.3066 18.476C13.468 18.6891 13.6908 18.8571 13.975 18.9763C14.2592 19.0958 14.5852 19.1539 14.9532 19.1539C15.3052 19.1539 15.6182 19.0925 15.8896 18.9666C16.1576 18.8374 16.3706 18.6631 16.5225 18.4403C16.6743 18.2142 16.7452 17.956 16.7419 17.6687C16.7452 17.3845 16.6612 17.1327 16.4837 16.9132C16.3061 16.6904 16.0607 16.5193 15.7444 16.3967C15.4281 16.2708 15.0632 16.2094 14.65 16.2094H13.2197V13.5684H14.65C15.031 13.5684 15.3666 13.507 15.6573 13.3811C15.9479 13.2583 16.1771 13.0874 16.3385 12.8677C16.5032 12.6449 16.5805 12.3931 16.5774 12.1089C16.5808 11.8345 16.516 11.5922 16.3773 11.3792C16.2383 11.1692 16.0479 11.0045 15.8025 10.8853C15.5571 10.7658 15.2729 10.7077 14.9532 10.7077C14.6045 10.7077 14.2946 10.7691 14.0202 10.8917C13.7491 11.0176 13.5327 11.1887 13.3778 11.4084C13.2228 11.6279 13.1422 11.8797 13.1357 12.1639H9.47766C9.48077 11.3018 9.71973 10.543 10.1879 9.88131C10.6594 9.21939 11.3051 8.70289 12.1251 8.32516C12.9453 7.95053 13.8881 7.76344 14.9534 7.76344C15.9931 7.76344 16.9133 7.93768 17.714 8.29302C18.5146 8.64504 19.1411 9.12917 19.5931 9.74587C20.0451 10.3626 20.2679 11.0697 20.2648 11.864C20.2745 12.6518 20.0032 13.2975 19.4543 13.8012C18.9086 14.3081 18.2145 14.6052 17.375 14.6954V14.8084C18.5115 14.9312 19.3672 15.2766 19.9418 15.8481C20.5132 16.4196 20.7974 17.1362 20.7877 17.9983C20.791 18.8249 20.5456 19.5545 20.0484 20.1938C19.5479 20.8298 18.8602 21.3303 17.9755 21.6918C17.0942 22.0567 16.0771 22.2374 14.9244 22.2374L14.9242 22.2372Z" fill=""/>
+                                            </svg>
+                                            
+
+
+                                        Комитет по<br>
+                                        Клиническим<br>
+                                        рекомендациям
+                                    </a>
+                                </li>
+
+                                <li class="sidebar-menu__list-none ">
+
+
+                                    <a class="scince-menu__fourth sidebar-menu__fourth" href="#scince-fourth">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8" xmlns="http://www.w3.org/2000/svg">
+                                            <g opacity="0.5">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 0C23.2844 0 30 6.71556 30 15C30 23.2844 23.2844 29.9999 15 29.9999C6.71557 29.9999 0 23.2844 0 15C0 6.71556 6.71557 0 15 0ZM8.93173 19.8429V16.8726L14.6014 7.9551H15.8672H17.2975H19.4447V16.8726H21.0686V19.8429H19.4447V22.0448H15.7833C15.7833 21.3107 15.7855 20.577 15.7888 19.8429H8.9321H8.93173ZM15.8508 11.9199H15.7571L12.7029 16.7628V16.8726H15.8089C15.8227 15.2221 15.8391 13.5715 15.8508 11.9199Z" fill=""/>
+                                            </g>
+                                            </svg>
+                                            
+
+
+                                        Молодежный<br>
+                                        комитет
+                                    </a>
+                                </li>
+                                
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="scince-content__right">
+                    <div class="scince-box__first scince-box__global" id="scince-first">
+                        <div class="scince-box__first-title title-scince-box title-global">
+                            <h2>Научный комитет</h2>
+                            <ul class="scince-box__crumbs crumbs">
+                                <li><a href="./index.html">Главная</a></li>
+                                <span>></span>
+                                <li><a href="comitets.html">Коминеты</a></li>
+                                <span>></span>
+                                <li>Научные комитеты</li>
+                            </ul>
+                        </div>
+                        <div class="scince-box__first-content" id="vis-1">
+
+                            <div class="scince-box__first-media item-media">
+                                <div class="scince-box__first-media-prew item-media__prew">
+                                    <img src="images/comitet-video.jpg" width="846" height="348" alt="video">
+                                </div>
+                                <div class="scince-box__first-media-items item-media__items">
+                                    <div class="scince-box__first-media-item item-media__item">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                    <div class="scince-box__first-media-item item-media__item">
+                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                        <span>Lorem ipsum dolor sit amet</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scince-box__first-text text-global">
+                                <div class="scince-box__first-minititle scince-box__global-minititle minititle-global">
+                                    <h3>Миссия Комитета по образованию и тренингу</h3>
+                                </div>
+                                <div class="scince-box__first-text text-global">
+                                    <p>
+                                        Улучшение результатов лечения пациентов через:
+                                    </p>
+                              </div>
+                            <ul class="scince-box__first-list text-list-global">
+                                <li>дополнительное образование и тренинг врачей в сфере колопроктологии, онкологии и хирургии
+                                </li>
+                                <li>широкое распространение и повышение доступности высокотехнологичных хирургических вмешательств для населения России доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах их профилактики, диагностики, лечения и реабилитации
+
+                                </li>
+                                <li>
+                                    распространение в России и русскоговорящих странах знаний, основанных на данных
+                                    доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах <br>
+                                    их профилактики, диагностики, лечения и реабилитации
+
+
+                                </li>
+                                <li>
+                                    проведение образовательных мероприятий
+
+                                </li>
+                            </ul>
+
+
+                            <div class="scince-box__first-minititle scince-box__global-minititle minititle-global">
+                                <h3>Деятельность Комитета по образованию и тренингу
+                                </h3>
+                            </div>
+                        <ul class="scince-box__first-list text-list-global">
+                            <li>
+                                разработка и проведение образовательных мероприятий и тренинг-курсов, в том числе в
+                                системе НМО  
+                            </li>
+                            <li>
+                                оценка и одобрение внешних образовательных мероприятий и тренинг-курсов
+                            </li>
+                            <li>
+                                создание и распространение образовательных материалов
+                            </li>
+                            <li>
+                                проведение учебных семинаров
+
+                            </li>
+                            <li>
+                                разработка учебных курсов для корпоративных партнеров
+
+
+                            </li>
+                            <li>
+                                разработка материалов для онлайн обучения, в том числе в системе НМО:
+                                <ul>
+                                    <li>
+                                        создание и пополнение «базы знаний» по колопроктологии, онкологии и хирургии
+
+                                    </li>
+                                    <li>
+                                        создание средств оценки знаний (тестов, клинических задач и других)
+
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                предоставление членам РОКХ возможностей «академической мобильности», в том числе:
+                                <ul>
+                                    <li>предоставление грантов для участия в образовательных и научных конференциях и мастер
+                                        классах
+                                        </li>
+                                    <li>предоставление грантов для краткосрочных и долгосрочных клинических и научных
+                                        стажировок
+                                        </li>
+                                        <li>предоставление грантов для «академических визитов» - посещения отечественных и
+                                            зарубежных университетов и клиник
+                                            
+                                            </li>
+                                </ul>
+                            </li>
+                            <li>
+                                взаимодействие с официальными структурами по вопросам разработки и внедрения
+                                профессиональных стандартов в колопроктологии, хирургии и онкологии
+                            </li>
+                        </ul>
+
+                            <div class="scince-box__first-minititle scince-box__global-minititle minititle-global">
+                                <h3>Члены научного комитета</h3>
+                            </div>
+
+                            <div class="scince-box__first-staff item-person">
+                                <div class="scince-box__first-staff-person item-person__inner ">
+                                    <a class="scince-box__first-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="scince-box__first-link">
+                                    <span class="scince-box__first-staff-name item-person__name">Киценко</span>
+                                    <span class="scince-box__first-staff-sername item-person__surname">Евгений<br>Александрович</span>
+                                    </a>
+                                </div>
+    
+                                <div class="scince-box__first-staff-person item-person__inner ">
+                                    <a class="scince-box__first-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="scince-box__first-link">
+                                    <span class="scince-box__first-staff-name item-person__name">Коссович</span>
+                                    <span class="scince-box__first-staff-sername item-person__surname">Михаил<br>Александрович</span>
+                                    </a>
+                                </div>
+    
+                                <div class="scince-box__first-staff-person item-person__inner ">
+                                    <a class="scince-box__first-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="scince-box__first-link">
+                                    <span class="scince-box__first-staff-name item-person__name">Ложкевич</span>
+                                    <span class="scince-box__first-staff-sername item-person__surname">Александр<br>Александрович</span>
+                                    </a>
+                                </div>
+    
+                                <div class="scince-box__first-staff-person item-person__inner ">
+                                    <a class="scince-box__first-link"><img src="./images/staff9.png" width="120" height="120" alt="person"></a>
+                                    <a class="scince-box__first-link">
+                                    <span class="scince-box__first-staff-name item-person__name">Маркарьян</span>
+                                    <span class="scince-box__first-staff-sername item-person__surname">Даниил<br>Рафаэлевич</span>
+                                    </a>
+                                </div>
+    
+                                <div class="scince-box__first-staff-person item-person__inner ">
+                                    <a class="scince-box__first-link"><img src="./images/staff10.png" width="120" height="120" alt="person"></a>
+                                    <a class="scince-box__first-link">
+                                    <span class="scince-box__first-staff-name item-person__name">Невольских</span>
+                                    <span class="scince-box__first-staff-sername item-person__surname">Алексей<br>Алексеевич</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <a class="scince-box__first-btn color-btn">Подать заявку на вступление в комитет</a>
+                        </div>
+
+
+
+
+                        <div class="scince-box__first-title title-scince-box title-global">
+                            <h2><a>Новости</a></h2>
+                        </div>
+                        <div class="scince-box__first-groups">
+                            <div class="scince-box__first-photo item-news">
+                               
+                                <div class="item-img-news">
+                                    <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                                </div>
+
+                                <div class="scince-box__first-photo-text item-text-news ">
+                                    <a class="news__link news__item-link" href="science.html">
+                                            <span
+                                                class="scince-box__first-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                        </a>
+                                   
+                                </div>
+                               
+                            </div>
+                            <div class="scince-box__first-photo item-news">
+                               
+                                <div class="item-img-news">
+                                    <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                                </div>
+
+                                <div class="scince-box__first-photo-text item-text-news ">
+                                    <a class="news__link news__item-link" href="science.html">
+                                            <span
+                                                class="scince-box__first-photo-title item-title-news">08.02.2022</span>
+                                                <p>16-й онлайн онкологический консилиум<br>
+                                                    Клиники колопроктологии и<br>
+                                                    малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                    Рак анального канала: что делать,<br>
+                                                    когда ХЛТ неэффективна?</p>
+                                        </a>
+                                   
+                                </div>
+                                
+                            </div>
+
+                            <div class="scince-box__first-photo item-news">
+                               
+                                <div class="item-img-news">
+                                    <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                                </div>
+
+                                <div class="scince-box__first-photo-text item-text-news ">
+                                  <a class="news__link news__item-link" href="science.html">
+                                            <span
+                                                class="scince-box__first-photo-title item-title-news">08.02.2022</span>
+                                                <p>16-й онлайн онкологический консилиум<br>
+                                                    Клиники колопроктологии и<br>
+                                                    малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                    Рак анального канала: что делать,<br>
+                                                    когда ХЛТ неэффективна?</p>
+                                        </a>
+                                   
+                                </div>
+                               
+                            </div>
+                        </div>
+
+
+
+                        <div class="scince-box__first-title title-scince-box title-global">
+                            <h2><a>База знаний</a></h2>
+                        </div>
+                        <div class="scince-box__first-groups">
+                            <div class="scince-box__first-photo item-news">
+                               
+                                <div class="item-img-news">
+                                    <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                                </div>
+
+                                <div class="scince-box__first-photo-text item-text-news ">
+                                   <a class="news__link news__item-link" href="science.html">
+                                            <span
+                                                class="scince-box__first-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                        </a>
+                                   
+                                </div>
+                               
+                            </div>
+                            <div class="scince-box__first-photo item-news">
+                                
+                                <div class="item-img-news">
+                                    <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                                </div>
+
+                                <div class="scince-box__first-photo-text item-text-news ">
+                                   <a class="news__link news__item-link" href="science.html">
+                                            <span
+                                                class="scince-box__first-photo-title item-title-news">08.02.2022</span>
+                                                <p>16-й онлайн онкологический консилиум<br>
+                                                    Клиники колопроктологии и<br>
+                                                    малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                    Рак анального канала: что делать,<br>
+                                                    когда ХЛТ неэффективна?</p>
+                                     </a>
+                                   
+                                </div>
+                               
+                            </div>
+
+                            <div class="scince-box__first-photo item-news">
+                              
+                                <div class="item-img-news">
+                                    <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                                </div>
+
+                                <div class="scince-box__first-photo-text item-text-news ">
+                                  <a class="news__link news__item-link" href="science.html">
+                                            <span
+                                                class="scince-box__first-photo-title item-title-news">08.02.2022</span>
+                                                <p>16-й онлайн онкологический консилиум<br>
+                                                    Клиники колопроктологии и<br>
+                                                    малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                    Рак анального канала: что делать,<br>
+                                                    когда ХЛТ неэффективна?</p>
+                                    </a>
+                                
+                                </div>
+                              
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+
+
+
+                <div class="scince-box__second scince-box__global" id="scince-second">
+                    <div class="scince-box__second-title title-scince-box title-global">
+                        <h2>Научный комитет</h2>
+                        
+                    </div>
+                    <div class="scince-box__second-content" id="vis-2">
+                
+                        <div class="scince-box__second-media item-media">
+                            <div class="scince-box__second-media-prew item-media__prew">
+                                <img src="images/comitet-video.jpg" width="846" height="348" alt="video">
+                            </div>
+                            <div class="scince-box__second-media-items item-media__items">
+                                <div class="scince-box__second-media-item item-media__item">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                                <div class="scince-box__second-media-item item-media__item">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scince-box__second-text text-global">
+                            <div class="scince-box__second-minititle scince-box__global-minititle minititle-global">
+                                <h3>Миссия Комитета по образованию и тренингу</h3>
+                            </div>
+                            <div class="scince-box__second-text text-global">
+                                <p>
+                                    Улучшение результатов лечения пациентов через:
+                                </p>
+                          </div>
+                        <ul class="scince-box__second-list text-list-global">
+                            <li>дополнительное образование и тренинг врачей в сфере колопроктологии, онкологии и хирургии
+                            </li>
+                            <li>широкое распространение и повышение доступности высокотехнологичных хирургических вмешательств для населения России доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах их профилактики, диагностики, лечения и реабилитации
+                
+                            </li>
+                            <li>
+                                распространение в России и русскоговорящих странах знаний, основанных на данных
+                                доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах <br>
+                                их профилактики, диагностики, лечения и реабилитации
+                
+                
+                            </li>
+                            <li>
+                                проведение образовательных мероприятий
+                
+                            </li>
+                        </ul>
+                
+                
+                        <div class="scince-box__second-minititle scince-box__global-minititle minititle-global">
+                            <h3>Деятельность Комитета по образованию и тренингу
+                            </h3>
+                        </div>
+                    <ul class="scince-box__second-list text-list-global">
+                        <li>
+                            разработка и проведение образовательных мероприятий и тренинг-курсов, в том числе в
+                            системе НМО  
+                        </li>
+                        <li>
+                            оценка и одобрение внешних образовательных мероприятий и тренинг-курсов
+                        </li>
+                        <li>
+                            создание и распространение образовательных материалов
+                        </li>
+                        <li>
+                            проведение учебных семинаров
+                
+                        </li>
+                        <li>
+                            разработка учебных курсов для корпоративных партнеров
+                
+                
+                        </li>
+                        <li>
+                            разработка материалов для онлайн обучения, в том числе в системе НМО:
+                            <ul>
+                                <li>
+                                    создание и пополнение «базы знаний» по колопроктологии, онкологии и хирургии
+                
+                                </li>
+                                <li>
+                                    создание средств оценки знаний (тестов, клинических задач и других)
+                
+                                </li>
+                            </ul>
+                
+                        </li>
+                        <li>
+                            предоставление членам РОКХ возможностей «академической мобильности», в том числе:
+                            <ul>
+                                <li>предоставление грантов для участия в образовательных и научных конференциях и мастер
+                                    классах
+                                    </li>
+                                <li>предоставление грантов для краткосрочных и долгосрочных клинических и научных
+                                    стажировок
+                                    </li>
+                                    <li>предоставление грантов для «академических визитов» - посещения отечественных и
+                                        зарубежных университетов и клиник
+                                        
+                                        </li>
+                            </ul>
+                        </li>
+                        <li>
+                            взаимодействие с официальными структурами по вопросам разработки и внедрения
+                            профессиональных стандартов в колопроктологии, хирургии и онкологии
+                        </li>
+                    </ul>
+                
+                        <div class="scince-box__second-minititle scince-box__global-minititle minititle-global">
+                            <h3>Члены научного комитета</h3>
+                        </div>
+                
+                        <div class="scince-box__second-staff item-person">
+                            <div class="scince-box__second-staff-person item-person__inner ">
+                                <a class="scince-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__second-link">
+                                <span class="scince-box__second-staff-name item-person__name">Киценко</span>
+                                <span class="scince-box__second-staff-sername item-person__surname">Евгений<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__second-staff-person item-person__inner ">
+                                <a class="scince-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__second-link">
+                                <span class="scince-box__second-staff-name item-person__name">Коссович</span>
+                                <span class="scince-box__second-staff-sername item-person__surname">Михаил<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__second-staff-person item-person__inner ">
+                                <a class="scince-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__second-link">
+                                <span class="scince-box__second-staff-name item-person__name">Ложкевич</span>
+                                <span class="scince-box__second-staff-sername item-person__surname">Александр<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__second-staff-person item-person__inner ">
+                                <a class="scince-box__second-link"><img src="./images/staff9.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__second-link">
+                                <span class="scince-box__second-staff-name item-person__name">Маркарьян</span>
+                                <span class="scince-box__second-staff-sername item-person__surname">Даниил<br>Рафаэлевич</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__second-staff-person item-person__inner ">
+                                <a class="scince-box__second-link"><img src="./images/staff10.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__second-link">
+                                <span class="scince-box__second-staff-name item-person__name">Невольских</span>
+                                <span class="scince-box__second-staff-sername item-person__surname">Алексей<br>Алексеевич</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="scince-box__second-btn color-btn">Подать заявку на вступление в комитет</a>
+                    </div>
+                
+                
+                
+                
+                    <div class="scince-box__second-title title-scince-box title-global">
+                        <h2><a>Новости</a></h2>
+                    </div>
+                    <div class="scince-box__second-groups">
+                        <div class="scince-box__second-photo item-news">
+                      
+                            <div class="item-img-news">
+                                <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__second-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__second-photo-title item-title-news">08.02.2022</span>
+                                        <p>16-й онлайн онкологический консилиум<br>
+                                            Клиники колопроктологии и<br>
+                                            малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                            Рак анального канала: что делать,<br>
+                                            когда ХЛТ неэффективна?</p>
+                                    </a>
+                                
+                            </div>
+                           
+                        </div>
+                        <div class="scince-box__second-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__second-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__second-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                
+                        <div class="scince-box__second-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__second-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__second-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="scince-box__second-title title-scince-box title-global">
+                        <h2><a>База знаний</a></h2>
+                    </div>
+                    <div class="scince-box__second-groups">
+                        <div class="scince-box__second-photo item-news">
+                         
+                            <div class="item-img-news">
+                                <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__second-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__second-photo-title item-title-news">08.02.2022</span>
+                                        <p>16-й онлайн онкологический консилиум<br>
+                                            Клиники колопроктологии и<br>
+                                            малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                            Рак анального канала: что делать,<br>
+                                            когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                        <div class="scince-box__second-photo item-news">
+                            
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__second-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__second-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                        
+                        </div>
+                
+                        <div class="scince-box__second-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__second-photo-text item-text-news ">
+                              <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__second-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+
+
+
+
+
+
+                <div class="scince-box__third scince-box__global" id="scince-third">
+                    <div class="scince-box__third-title title-scince-box title-global">
+                        <h2>Научный комитет</h2>
+                        
+                    </div>
+                    <div class="scince-box__third-content" id="vis-3">
+                
+                        <div class="scince-box__third-media item-media">
+                            <div class="scince-box__third-media-prew item-media__prew">
+                                <img src="images/comitet-video.jpg" width="846" height="348" alt="video">
+                            </div>
+                            <div class="scince-box__third-media-items item-media__items">
+                                <div class="scince-box__third-media-item item-media__item">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                                <div class="scince-box__third-media-item item-media__item">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scince-box__third-text text-global">
+                            <div class="scince-box__third-minititle scince-box__global-minititle minititle-global">
+                                <h3>Миссия Комитета по образованию и тренингу</h3>
+                            </div>
+                            <div class="scince-box__third-text text-global">
+                                <p>
+                                    Улучшение результатов лечения пациентов через:
+                                </p>
+                          </div>
+                        <ul class="scince-box__third-list text-list-global">
+                            <li>дополнительное образование и тренинг врачей в сфере колопроктологии, онкологии и хирургии
+                            </li>
+                            <li>широкое распространение и повышение доступности высокотехнологичных хирургических вмешательств для населения России доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах их профилактики, диагностики, лечения и реабилитации
+                
+                            </li>
+                            <li>
+                                распространение в России и русскоговорящих странах знаний, основанных на данных
+                                доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах <br>
+                                их профилактики, диагностики, лечения и реабилитации
+                
+                
+                            </li>
+                            <li>
+                                проведение образовательных мероприятий
+                
+                            </li>
+                        </ul>
+                
+                
+                        <div class="scince-box__third-minititle scince-box__global-minititle minititle-global">
+                            <h3>Деятельность Комитета по образованию и тренингу
+                            </h3>
+                        </div>
+                    <ul class="scince-box__third-list text-list-global">
+                        <li>
+                            разработка и проведение образовательных мероприятий и тренинг-курсов, в том числе в
+                            системе НМО  
+                        </li>
+                        <li>
+                            оценка и одобрение внешних образовательных мероприятий и тренинг-курсов
+                        </li>
+                        <li>
+                            создание и распространение образовательных материалов
+                        </li>
+                        <li>
+                            проведение учебных семинаров
+                
+                        </li>
+                        <li>
+                            разработка учебных курсов для корпоративных партнеров
+                
+                
+                        </li>
+                        <li>
+                            разработка материалов для онлайн обучения, в том числе в системе НМО:
+                            <ul>
+                                <li>
+                                    создание и пополнение «базы знаний» по колопроктологии, онкологии и хирургии
+                
+                                </li>
+                                <li>
+                                    создание средств оценки знаний (тестов, клинических задач и других)
+                
+                                </li>
+                            </ul>
+                
+                        </li>
+                        <li>
+                            предоставление членам РОКХ возможностей «академической мобильности», в том числе:
+                            <ul>
+                                <li>предоставление грантов для участия в образовательных и научных конференциях и мастер
+                                    классах
+                                    </li>
+                                <li>предоставление грантов для краткосрочных и долгосрочных клинических и научных
+                                    стажировок
+                                    </li>
+                                    <li>предоставление грантов для «академических визитов» - посещения отечественных и
+                                        зарубежных университетов и клиник
+                                        
+                                        </li>
+                            </ul>
+                        </li>
+                        <li>
+                            взаимодействие с официальными структурами по вопросам разработки и внедрения
+                            профессиональных стандартов в колопроктологии, хирургии и онкологии
+                        </li>
+                    </ul>
+                
+                        <div class="scince-box__third-minititle scince-box__global-minititle minititle-global">
+                            <h3>Члены научного комитета</h3>
+                        </div>
+                
+                        <div class="scince-box__third-staff item-person">
+                            <div class="scince-box__third-staff-person item-person__inner ">
+                                <a class="scince-box__third-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__third-link">
+                                <span class="scince-box__third-staff-name item-person__name">Киценко</span>
+                                <span class="scince-box__third-staff-sername item-person__surname">Евгений<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__third-staff-person item-person__inner ">
+                                <a class="scince-box__third-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__third-link">
+                                <span class="scince-box__third-staff-name item-person__name">Коссович</span>
+                                <span class="scince-box__third-staff-sername item-person__surname">Михаил<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__third-staff-person item-person__inner ">
+                                <a class="scince-box__third-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__third-link">
+                                <span class="scince-box__third-staff-name item-person__name">Ложкевич</span>
+                                <span class="scince-box__third-staff-sername item-person__surname">Александр<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__third-staff-person item-person__inner ">
+                                <a class="scince-box__third-link"><img src="./images/staff9.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__third-link">
+                                <span class="scince-box__third-staff-name item-person__name">Маркарьян</span>
+                                <span class="scince-box__third-staff-sername item-person__surname">Даниил<br>Рафаэлевич</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__third-staff-person item-person__inner ">
+                                <a class="scince-box__third-link"><img src="./images/staff10.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__third-link">
+                                <span class="scince-box__third-staff-name item-person__name">Невольских</span>
+                                <span class="scince-box__third-staff-sername item-person__surname">Алексей<br>Алексеевич</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="scince-box__third-btn color-btn">Подать заявку на вступление в комитет</a>
+                    </div>
+                
+                
+                
+                
+                    <div class="scince-box__third-title title-scince-box title-global">
+                        <h2><a>Новости</a></h2>
+                    </div>
+                    <div class="scince-box__third-groups">
+                        <div class="scince-box__third-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__third-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__third-photo-title item-title-news">08.02.2022</span>
+                                        <p>16-й онлайн онкологический консилиум<br>
+                                            Клиники колопроктологии и<br>
+                                            малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                            Рак анального канала: что делать,<br>
+                                            когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                        <div class="scince-box__third-photo item-news">
+                          
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__third-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__third-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                
+                        <div class="scince-box__third-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__third-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__third-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="scince-box__third-title title-scince-box title-global">
+                        <h2><a>База знаний</a></h2>
+                    </div>
+                    <div class="scince-box__third-groups">
+                        <div class="scince-box__third-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__third-photo-text item-text-news ">
+                             <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__third-photo-title item-title-news">08.02.2022</span>
+                                        <p>16-й онлайн онкологический консилиум<br>
+                                            Клиники колопроктологии и<br>
+                                            малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                            Рак анального канала: что делать,<br>
+                                            когда ХЛТ неэффективна?</p>
+                                    </a>
+                             
+                            </div>
+                          
+                        </div>
+                        <div class="scince-box__third-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__third-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__third-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                              
+                            </div>
+                        
+                        </div>
+                
+                        <div class="scince-box__third-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__third-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__third-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                              
+                            </div>
+                          
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="scince-box__fourth scince-box__global" id="scince-fourth">
+                    <div class="scince-box__fourth-title title-scince-box title-global">
+                        <h2>Научный комитет</h2>
+                       
+                    </div>
+                    <div class="scince-box__fourth-content" id="vis-4">
+                
+                        <div class="scince-box__fourth-media item-media">
+                            <div class="scince-box__fourth-media-prew item-media__prew">
+                                <img src="images/comitet-video.jpg" width="846" height="348" alt="video">
+                            </div>
+                            <div class="scince-box__fourth-media-items item-media__items">
+                                <div class="scince-box__fourth-media-item item-media__item">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                                <div class="scince-box__fourth-media-item item-media__item">
+                                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/-5KAN9_CzSA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <span>Lorem ipsum dolor sit amet</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scince-box__fourth-text text-global">
+                            <div class="scince-box__fourth-minititle scince-box__global-minititle minititle-global">
+                                <h3>Миссия Комитета по образованию и тренингу</h3>
+                            </div>
+                            <div class="scince-box__fourth-text text-global">
+                                <p>
+                                    Улучшение результатов лечения пациентов через:
+                                </p>
+                          </div>
+                        <ul class="scince-box__fourth-list text-list-global">
+                            <li>дополнительное образование и тренинг врачей в сфере колопроктологии, онкологии и хирургии
+                            </li>
+                            <li>широкое распространение и повышение доступности высокотехнологичных хирургических вмешательств для населения России доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах их профилактики, диагностики, лечения и реабилитации
+                
+                            </li>
+                            <li>
+                                распространение в России и русскоговорящих странах знаний, основанных на данных
+                                доказательной медицины, о болезнях толстой кишки и аноректальной области, а также о способах <br>
+                                их профилактики, диагностики, лечения и реабилитации
+                
+                
+                            </li>
+                            <li>
+                                проведение образовательных мероприятий
+                
+                            </li>
+                        </ul>
+                
+                
+                        <div class="scince-box__fourth-minititle scince-box__global-minititle minititle-global">
+                            <h3>Деятельность Комитета по образованию и тренингу
+                            </h3>
+                        </div>
+                    <ul class="scince-box__fourth-list text-list-global">
+                        <li>
+                            разработка и проведение образовательных мероприятий и тренинг-курсов, в том числе в
+                            системе НМО  
+                        </li>
+                        <li>
+                            оценка и одобрение внешних образовательных мероприятий и тренинг-курсов
+                        </li>
+                        <li>
+                            создание и распространение образовательных материалов
+                        </li>
+                        <li>
+                            проведение учебных семинаров
+                
+                        </li>
+                        <li>
+                            разработка учебных курсов для корпоративных партнеров
+                
+                
+                        </li>
+                        <li>
+                            разработка материалов для онлайн обучения, в том числе в системе НМО:
+                            <ul>
+                                <li>
+                                    создание и пополнение «базы знаний» по колопроктологии, онкологии и хирургии
+                
+                                </li>
+                                <li>
+                                    создание средств оценки знаний (тестов, клинических задач и других)
+                
+                                </li>
+                            </ul>
+                
+                        </li>
+                        <li>
+                            предоставление членам РОКХ возможностей «академической мобильности», в том числе:
+                            <ul>
+                                <li>предоставление грантов для участия в образовательных и научных конференциях и мастер
+                                    классах
+                                    </li>
+                                <li>предоставление грантов для краткосрочных и долгосрочных клинических и научных
+                                    стажировок
+                                    </li>
+                                    <li>предоставление грантов для «академических визитов» - посещения отечественных и
+                                        зарубежных университетов и клиник
+                                        
+                                        </li>
+                            </ul>
+                        </li>
+                        <li>
+                            взаимодействие с официальными структурами по вопросам разработки и внедрения
+                            профессиональных стандартов в колопроктологии, хирургии и онкологии
+                        </li>
+                    </ul>
+                
+                        <div class="scince-box__fourth-minititle scince-box__global-minititle minititle-global">
+                            <h3>Члены научного комитета</h3>
+                        </div>
+                
+                        <div class="scince-box__fourth-staff item-person">
+                            <div class="scince-box__fourth-staff-person item-person__inner ">
+                                <a class="scince-box__fourth-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__fourth-link">
+                                <span class="scince-box__fourth-staff-name item-person__name">Киценко</span>
+                                <span class="scince-box__fourth-staff-sername item-person__surname">Евгений<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__fourth-staff-person item-person__inner ">
+                                <a class="scince-box__fourth-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__fourth-link">
+                                <span class="scince-box__fourth-staff-name item-person__name">Коссович</span>
+                                <span class="scince-box__fourth-staff-sername item-person__surname">Михаил<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__fourth-staff-person item-person__inner ">
+                                <a class="scince-box__fourth-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__fourth-link">
+                                <span class="scince-box__fourth-staff-name item-person__name">Ложкевич</span>
+                                <span class="scince-box__fourth-staff-sername item-person__surname">Александр<br>Александрович</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__fourth-staff-person item-person__inner ">
+                                <a class="scince-box__fourth-link"><img src="./images/staff9.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__fourth-link">
+                                <span class="scince-box__fourth-staff-name item-person__name">Маркарьян</span>
+                                <span class="scince-box__fourth-staff-sername item-person__surname">Даниил<br>Рафаэлевич</span>
+                                </a>
+                            </div>
+                
+                            <div class="scince-box__fourth-staff-person item-person__inner ">
+                                <a class="scince-box__fourth-link"><img src="./images/staff10.png" width="120" height="120" alt="person"></a>
+                                <a class="scince-box__fourth-link">
+                                <span class="scince-box__fourth-staff-name item-person__name">Невольских</span>
+                                <span class="scince-box__fourth-staff-sername item-person__surname">Алексей<br>Алексеевич</span>
+                                </a>
+                            </div>
+                        </div>
+                        <a class="scince-box__fourth-btn color-btn">Подать заявку на вступление в комитет</a>
+                    </div>
+                
+                
+                
+                
+                    <div class="scince-box__fourth-title title-scince-box title-global">
+                        <h2><a>Новости</a></h2>
+                    </div>
+                    <div class="scince-box__fourth-groups">
+                        <div class="scince-box__fourth-photo item-news">
+                            
+                            <div class="item-img-news">
+                                <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__fourth-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__fourth-photo-title item-title-news">08.02.2022</span>
+                                        <p>16-й онлайн онкологический консилиум<br>
+                                            Клиники колопроктологии и<br>
+                                            малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                            Рак анального канала: что делать,<br>
+                                            когда ХЛТ неэффективна?</p>
+                                </a>
+                             
+                            </div>
+                         
+                        </div>
+                        <div class="scince-box__fourth-photo item-news">
+                         
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__fourth-photo-text item-text-news ">
+                                <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__fourth-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                            </div>
+                           
+                        </div>
+                
+                        <div class="scince-box__fourth-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__fourth-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__fourth-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                </a>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                
+                
+                    <div class="scince-box__fourth-title title-scince-box title-global">
+                        <h2><a>База знаний</a></h2>
+                    </div>
+                    <div class="scince-box__fourth-groups">
+                        <div class="scince-box__fourth-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__fourth-photo-text item-text-news ">
+                               <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__fourth-photo-title item-title-news">08.02.2022</span>
+                                        <p>16-й онлайн онкологический консилиум<br>
+                                            Клиники колопроктологии и<br>
+                                            малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                            Рак анального канала: что делать,<br>
+                                            когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                        <div class="scince-box__fourth-photo item-news">
+                          
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__fourth-photo-text item-text-news ">
+                              <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__fourth-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                               
+                            </div>
+                           
+                        </div>
+                
+                        <div class="scince-box__fourth-photo item-news">
+                           
+                            <div class="item-img-news">
+                                <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                            </div>
+                
+                            <div class="scince-box__fourth-photo-text item-text-news ">
+                                <a class="news__link news__item-link" href="science.html">
+                                        <span
+                                            class="scince-box__fourth-photo-title item-title-news">08.02.2022</span>
+                                            <p>16-й онлайн онкологический консилиум<br>
+                                                Клиники колопроктологии и<br>
+                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                Рак анального канала: что делать,<br>
+                                                когда ХЛТ неэффективна?</p>
+                                    </a>
+                             
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+                
+                
+                
+            </div>
+            <div class="arrow">
+            </div>
+            </div>
+        </main>
+
+
+
+
+        <footer class="footer">
+            <img class="footer__bg" src="./images/footer-bg.jpg" width="1440" height="379" alt="footer-bg">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-items">
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Общество</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">О РОКХ</a></li>
+                                    <li><a class="footer__link" href="about.html">Цель</a></li>
+                                    <li><a class="footer__link" href="about.html">Струтура</a></li>
+                                    <li><a class="footer__link" href="comitets.html">Комитеты</a></li>
+                                    <li><a class="footer__link" href="contacts.html">Контакты</a></li>
+                                    <li><a class="footer__link" href="partners.html">Партнеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Членство</h3>
+                                </div>
+
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">Преимущества</a></li>
+                                    <li><a class="footer__link" href="about.html">РОКХ в вашем городе</a></li>
+                                    <li><a class="footer__link">Внести членский взнос</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Обучение</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="events.html">Онлайн-обучение</a></li>
+                                    <li><a class="footer__link" href="events.html">Мероприятия</a></li>
+                                    <li><a class="footer__link" href="events.html">Курсы повышения квалификации</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <span class="footer__left-big"><a>+7(495)230-10-34</a></span>
+                            <ul class="footer__left-list">
+                                <li>Фрунзенская</li>
+                                <li>Москва, ул.Погодинская, д.1, стр.1</li>
+                                <li><a class="footer__link">info@siterscs.com</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-personal">
+                            <div class="footer__left-personal-title">
+                                <h3>Обработка персональных данных</h3>
+                            </div>
+
+                            <p><a class="footer__link">Политика в отношении обработки персональных данных
+                                    Согласие на обработку персональных данных</a></p>
+                        </div>
+
+                        <span class="footer__right-date">© 2014 - 2022 Российское общество колоректальных
+                            хирургов</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/validate/jquery.validate.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header__bg-inner">
+                <img class="header__bg" src="./images/header-bg.jpg" width="1400" height="200" alt="bg">
+            </div>
+
+
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="header__top">
+                        <a href="index.html"><img class="header__top-logo" src="./images/header-logo.png" width="184" height="68" alt="logo"></a>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="Поиск">
+                        </div>
+                        <div class="header__top-acc">
+                            <a data-fancybox data-src="#login" href=""><img src="./images/login.svg" alt="login"></a>
+                        </div>
+                    </div>
+                    <div class="search active container">
+                        <input type="text" name="search" placeholder="Поиск">
+                    </div>
+
+                    <div class="header__bottom">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header__menu-close">
+
+                        </div>
+                        <nav class="header__bottom-menu">
+                            <ul class="header__bottom-list">
+                                <li><a class="header__link" href="about.html">о нас</a></li>
+                                <li><a class="header__link" href="members.html">стать членом</a></li>
+                                <li><a class="header__link" href="comitets.html">комитеты</a></li>
+                                <li><a class="header__link" href="events.html">мероприятия</a></li>
+                                <li class="header__bottom-num"><a class="header__link" href="index.html">рокх</a></li>
+                                <li><a class="header__link" href="base.html">база знаний</a></li>
+                                <li><a class="header__link" href="news.html">новости</a></li>
+                                <li><a class="header__link" href="partners.html">партнеры</a></li>
+                                <li><a class="header__link" href="contacts.html">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------ POPUP------------------------>
+            <div class="header-popup" id="login">
+                <form action="" method="POST">
+                    <span class="header-popup__title">Для входа введите e-mail и пароль</span>
+                    <div class="header-popup__email">
+                        <label for="userEmail">Email
+                            <input name="email" type="email" id="userEmail" required>
+                        </label>
+                    </div>
+
+                    <div class="header-popup__pass">
+                        <label for="userPass">Пароль
+                            <input name="password" type="password" id="userPass" required>
+                        </label>
+                    </div>
+                    <div class="header-popup__check">
+                        <div class="header-popup__check-input">
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </div>
+                        <span><a>Я забыл пароль</a></span>
+                    </div>
+                    <button class="header-popup__btn" type="submit">Вход</button>
+
+                    <div class="header-popup__social">
+                        <div class="header-popup__social-reg">
+                            <span>Нет учетной записи?</span>
+                            <span><a>Зарегистрируйтесь.</a></span>
+                        </div>
+                        <div class="header-popup__social-comein">
+                            <span> Войти с помощью</span>
+                            <a><img src="./images/facebook.svg" alt="soc"></a>
+                            <a><img src="./images/google.svg" alt="soc"></a>
+                            <a><img src="./images/vk.svg" alt="soc"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+
+        <main class="content main-content__wrapper">
+            <div class="content__inner bg__inner container">
+                
+                <!-------------------------- SLIDER------------------------ -->
+                <section class="top ">
+                   
+                    <div class=" top__inner">
+    
+                        <div class="top__slider">
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+                            <div class="top__slider-item">
+                                <div class="top__slider-box">
+                                    <span class="top__slider-title">Международная конференция</span>
+                                    <span class="top__slider-big">&#171; Российская школа колоректальной хирургии &#187;</span>
+                                    <p>Уникальное ежегодное образовательное мероприятие,
+                                        которое собирает большое количество практикующих врачей из всех <span
+                                            class="top__slider-white">85 регионов России и более 25 стран мира.</span>
+                                    </p>
+                                    <p>РШК - единственное событие в мире, где собираются лучше западные и восточные
+                                        специалисты колопроктологии, хирургии, онкологии, для обсуждения самых актуальных
+                                        тенденций в развитии специальности.</p>
+                                </div>
+                                <div class="top__slider-img">
+                                    <img src="./images/slider-img.png" alt="slide">
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </section>
+                <!--------------------------------------------------------- -->
+    
+                <!--------------------------NEWS----------------------- -->
+                <section class="news">
+                  
+                        <div class="news__inner">
+                            <div class="news__first-top">
+                                <div class="news__first-top-title">
+                                    <h2><a href="news.html">Новости</a></h2>
+                                </div>
+                            <div class="news__first">
+                                <!--------------------------TOP-BLOCK----------------------- -->
+                                
+                                    <div class=" news__first-top-inner ">
+    
+                                        <div class="news__first-top-left item-news">                                        
+                                                <div class="news__first-top-left--img">
+                                                    <img src="./images/news-1.jpg" width="555" height="362" alt="">
+                                                </div>
+    
+                                                <div class="news__first-top-left-text item-news-text">
+                                                   <a class="news__link news__item-link" href="news.html">
+                                                            <span class="news__first-top-left-title">08.02.2022</span>
+                                                            <p>16-й онлайн онкологический консилиум Клиники колопроктологии
+                                                                и
+                                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.<br>
+                                                                Рак анального канала: что делать, когда ХЛТ неэффективна?
+                                                            </p>
+                                                        </a>
+                                                </div>
+                                           
+                                        </div>
+    
+    
+                                        <div class="news__first-top-right">
+                                            <a class="news__link-tape">
+                                                <div class="news__first-top-right-inner item-news">
+    
+                                                    <div class="news__first-top-right-img">
+                                                        <img src="./images/news-2.png" width="259" height="138" alt="">
+                                                    </div>
+    
+                                                    <span class="news__first-top-right-text item-text-news">Лента новостей</span>
+    
+                                                </div>
+                                            </a>
+                                            <div class="news__first-top-tape">
+                                                <ul class="news__first-top-list">
+                                                    <li>
+    
+                                                        <p><a class="news__link" href="#"><b>28.11.18</b>Опубликована новая
+                                                                версия
+                                                                профессионального стандарта колопроктолога.</a>
+                                                        </p>
+                                                    </li>
+                                                    <li>
+    
+                                                        <p><a class="news__link" href="#"><b>17.10.18</b>На сайте РОКХ
+                                                                появился раздел "Научные журналы".
+                                                            </a></p>
+                                                    </li>
+                                                    <li>
+    
+                                                        <p><a class="news__link" href="#"><b>02.03.18</b>Ранняя регистрация
+                                                                на конференцию "Российская
+                                                                школа
+                                                                колоректальной
+                                                                хирургии 2018" продлена до 15.03.2018г.
+                                                            </a></p>
+                                                    </li>
+                                                    <li>
+    
+                                                        <p><a class="news__link" href="#"><b>17.10.18</b>На сайте РОКХ
+                                                                появился раздел "Научные журналы".
+                                                            </a></p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+    
+                                    <div class="new__first-top-inner2">
+                                        <div class="news__first-top-items">
+    
+                                            <div class="news__first-top-item item-news">
+                                               
+                                                    <div class="news__first-top-item-img">
+                                                        <img src="./images/news-3.jpg" width="408" height="266" alt="image">
+                                                    </div>
+    
+                                                    <div class="news__first-top-item-text item-text-news">
+                                                       <a class="news__link news__item-link" href="news.html">
+                                                                <span
+                                                                    class="news__first-top-item-title item-title-news">08.02.2022</span>
+                                                                <p>16-й онлайн онкологический консилиум<br> Клиники
+                                                                    колопроктологии
+                                                                    и<br>
+                                                                    малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                                    Рак анального канала: что делать, когда ХЛТ
+                                                                    неэффективна?</p>
+                                                            </a>
+                                                        
+                                                    </div>
+                                                
+                                            </div>
+                                           
+    
+    
+                                            <div class="news__first-top-item item-news">
+                                               
+                                                    <div class="news__first-top-item-img">
+                                                        <img src="./images/news-4.jpg" width="408" height="266" alt="image">
+                                                    </div>
+    
+                                                    <div class="news__first-top-item-text item-text-news">
+                                                       <a class="news__link news__item-link" href="news.html">
+                                                                <span
+                                                                    class="news__first-top-item-title item-title-news">08.02.2022</span>
+                                                                <p>16-й онлайн онкологический консилиум<br> Клиники
+                                                                    колопроктологии
+                                                                    и<br>
+                                                                    малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                                    Рак анального канала: что делать, когда ХЛТ
+                                                                    неэффективна?</p>
+                                                            </a>
+                                                        
+                                                    </div>
+                                               
+                                            </div>
+    
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <!--------------------------BOTTOM-BLOCK----------------------- -->
+    
+                                <div class="news__first-bottom">
+                                    <div class="news__first-bottom-title">
+                                        <h2><a href="base.html">База знаний</a></h2>
+                                    </div>
+                                    <div class="news__first-bottom__inner">
+    
+                                    <div class="news__first-bottom-items">
+    
+                                        <div class="news__first-bottom-item item-news ">
+                                            
+                                                <div class="news__first-bottom-item-img">
+                                                    <img src="./images/news-5.jpg" width="408" height="266" alt="image">
+                                                </div>
+    
+                                                <div class="news__first-bottom-item-text item-text-news">
+                                                
+                                                        <a class="news__link news__item-link" href="base.html">
+                                                            <span
+                                                                class="news__first-bottom-item-title item-title-news">08.02.2022</span>
+                                                            <p>16-й онлайн онкологический консилиум<br> Клиники
+                                                                колопроктологии и<br>
+                                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                                Рак анального канала: что делать, когда ХЛТ неэффективна?
+                                                            </p>
+                                                        </a>
+                                                    
+                                                </div>
+                                           
+                                        </div>
+    
+    
+                                        <div class="news__first-bottom-item item-news ">
+                                           
+                                                <div class="news__first-bottom-item-img">
+                                                    <img src="./images/news-6.jpg" width="408" height="266" alt="image">
+                                                </div>
+    
+                                                <div class="news__first-bottom-item-text item-text-news">
+                                                    
+                                                        <a class="news__link news__item-link" href="base.html">
+                                                            <span
+                                                                class="news__first-bottom-item-title item-title-news">08.02.2022</span>
+                                                            <p>16-й онлайн онкологический консилиум<br> Клиники
+                                                                колопроктологии и<br>
+                                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                                Рак анального канала: что делать, когда ХЛТ неэффективна?
+                                                            </p>
+                                                        </a>
+                                                   
+                                                </div>
+                                            
+                                        </div>
+    
+    
+                                        <div class="news__first-bottom-item item-news ">
+                                          
+                                                <div class="news__first-bottom-item-img">
+                                                    <img src="./images/news-7.jpg" width="408" height="266" alt="image">
+                                                </div>
+    
+                                                <div class="news__first-bottom-item-text item-text-news">
+                                                   
+                                                        <a class="news__link news__item-link" href="base.html">
+                                                            <span
+                                                                class="news__first-bottom-item-title item-title-news">08.02.2022</span>
+                                                            <p>16-й онлайн онкологический консилиум<br> Клиники
+                                                                колопроктологии и<br>
+                                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                                Рак анального канала: что делать, когда ХЛТ неэффективна?
+                                                            </p>
+                                                        </a>
+                                                    
+                                                </div>
+                                         
+                                        </div>
+    
+    
+                                        <div class="news__first-bottom-item item-news">
+                                            
+                                                <div class="news__first-bottom-item-img">
+                                                    <img src="./images/news-8.jpg" width="408" height="266" alt="image">
+                                                </div>
+    
+                                                <div class="news__first-bottom-item-text item-text-news">
+                                                   
+                                                        <a class="news__link news__item-link" href="base.html">
+                                                            <span
+                                                                class="news__first-bottom-item-title item-title-news">08.02.2022</span>
+                                                            <p>16-й онлайн онкологический консилиум<br> Клиники
+                                                                колопроктологии и<br>
+                                                                малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.
+                                                                Рак анального канала: что делать, когда ХЛТ неэффективна?
+                                                            </p>
+                                                        </a>
+                                                    
+                                                </div>
+                                           
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+    
+                            <div class="news__second">
+                                <div class="news__second-title">
+                                    <h2>Ближайшие события</h2>
+                                </div>
+    
+                                <div class="news__second-items">
+    
+                                    <div class="news__second-item">
+                                        <a class="news__link" href="events.html">
+                                            <img src="./images/doings-1.jpg" width="263" height="203" alt=""></a>
+                                            <span class="news__second-town">Москва</span>
+                                            <span class="news__second-date">18.02.2022</span>
+                                             <a class="news__link" href="events.html">
+                                                    <p class="news__second-text">
+                                                        27-й вебинар Российской школы
+                                                        колоректальных хирургов.
+                                                        Есть ли в западном
+                                                        хирургическом мире место для
+                                                        латеральной лимфодиссекции
+                                                        при раке прямой кишки?
+                                                    </p>
+                                                </a>
+                                            
+                                            <a href="events.html"><img class="news__second-item-logo" src="./images/mini-logo.png" width="73"
+                                                height="25" alt="news-logo"></a>
+                                        
+                                    </div>
+    
+    
+    
+                                    <div class="news__second-item">
+                                        <a class="news__link" href="events.html">
+                                            <img src="./images/doings-2.jpg" width="263" height="203" alt=""></a>
+                                            <span class="news__second-town">Москва</span>
+                                            <span class="news__second-date">19.02.2022</span>
+                                             <a class="news__link" href="events.html">
+                                                    <p class="news__second-text">
+                                                        28-й вебинар Российской школы
+                                                        колоректальных хирургов
+                                                        «Спорные вопросы
+                                                        аноректальной хирургии»
+                                                    </p>
+                                                </a>
+                                            
+                                            <a href="events.html"><img class="news__second-item-logo" src="./images/mini-logo.png" width="73"
+                                                height="25" alt="news-logo"></a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="news__second-bithdays">
+                                    <div class="news__second-bithday-title minititle-global">
+                                       <h3>Дни рождения</h3> 
+                                    </div>
+                                    <div class="news__second-bithday__inner">
+                                        <a class="news__second-bithday-link1">Все</a>
+                                        <div class="news__second-bithday">
+                                            <div class="news__second-bithday-img">
+                                                <a><img src="images/bithday.png" alt=""></a>
+                                            </div>
+                                            <div class="news__second-bithday-bio">
+                                                <span class="news__second-bithday-bold">Тулина</span>
+                                                <span>Инна</span>
+                                                <span>Андреевна</span>
+                                                <span class="news__second-bithday-data">12.03.2022</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="news__second-bithday">
+                                            <div class="news__second-bithday-img">
+                                                <a><img src="images/nonavatar.jpg" alt=""></a>
+                                            </div>
+                                            <div class="news__second-bithday-bio">
+                                                <span class="news__second-bithday-bold">Фёдоров</span>
+                                                <span>Инакентий</span>
+                                                <span>Павлович</span>
+                                                <span class="news__second-bithday-data">12.03.2022</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="news__second-bithday">
+                                            <div class="news__second-bithday-img">
+                                                <a><img src="images/bithday.png" alt=""></a>
+                                            </div>
+                                            <div class="news__second-bithday-bio">
+                                                <span class="news__second-bithday-bold">Тулина</span>
+                                                <span>Инна</span>
+                                                <span>Андреевна</span>
+                                                <span class="news__second-bithday-data">12.03.2022</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="news__second-bithday">
+                                            <div class="news__second-bithday-img">
+                                                <a><img src="images/bithday.png" alt=""></a>
+                                            </div>
+                                            <div class="news__second-bithday-bio">
+                                                <span class="news__second-bithday-bold">Тулина</span>
+                                                <span>Инна</span>
+                                                <span>Андреевна</span>
+                                                <span class="news__second-bithday-data">12.03.2022</span>
+                                            </div>
+                                        </div>
+
+                                        <a class="news__second-bithday-link2">Все дни рождения</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+    
+                        </div>
+                   
+                </section>
+                <!--------------------------------------------------------- -->
+                <section class="partners partners-slide">
+                   
+                        <div class="partners__inner">
+    
+                            <div class="partners__title">
+                                <h2>Партнеры</h2>
+                            </div>
+    
+                            <div class="partners__items">
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-1.png" width="92" height="100" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Министерство<br> Здравохранения<br> Российской Федерации
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-2.png" width="161" height="35" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общероссийская<br> социальная сеть
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-3.png" width="96" height="95" alt="partners">
+                                            <!-- <img src="./images/partners-3.png" width="96" height="95" alt="partners"> -->
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общество врачей<br> России
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-4.png" width="86" height="73" alt="partners">
+                                            <!-- <img src="./images/partners-4.png" width="86" height="73" alt="partners"> -->
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Всероссийская<br>
+                                            организация<br>
+                                            “Руки помощи”
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-5.png" width="99" height="50" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общественная организация<br>
+                                            “Помоги ближнему”
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-1.png" width="92" height="100" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Министерство<br> Здравохранения<br> Российской Федерации
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-2.png" width="161" height="35" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общероссийская<br> социальная сеть
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-3.png" width="96" height="95" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общество врачей<br> России
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-4.png" width="86" height="73" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Всероссийская<br>
+                                            организация<br>
+                                            “Руки помощи”
+                                        </span>
+                                    </a>
+                                </div>
+    
+    
+    
+    
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-5.png" width="99" height="50" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общественная организация<br>
+                                            “Помоги ближнему”
+                                        </span>
+                                    </a>
+                                </div>
+    
+                            </div>
+    
+                            <div class="partners__items-slide">
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-1.png" width="92" height="100" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Министерство<br> Здравохранения<br> Российской Федерации
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-2.png" width="161" height="35" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общероссийская<br> социальная сеть
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-3.png" width="96" height="95" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общество врачей<br> России
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+    
+                                            <img src="./images/partners-4.png" width="86" height="73" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Всероссийская<br>
+                                            организация<br>
+                                            “Руки помощи”
+                                        </span>
+                                    </a>
+                                </div>
+                                <div class="partners__item">
+                                    <a class="partners__link" href="partners.html">
+                                        <div class="partners__item-img">
+                                            <img src="./images/partners-5.png" width="99" height="50" alt="partners">
+                                        </div>
+                                        <span class="partners__item-text">
+                                            Общественная организация<br>
+                                            “Помоги ближнему”
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                   
+                </section>
+            </div>
+           
+        </main>
+
+
+
+
+        <footer class="footer">
+            <img class="footer__bg" src="./images/footer-bg.jpg" width="1440" height="379" alt="footer-bg">
+            <div class="">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-items">
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Общество</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">О РОКХ</a></li>
+                                    <li><a class="footer__link" href="about.html">Цель</a></li>
+                                    <li><a class="footer__link" href="about.html">Струтура</a></li>
+                                    <li><a class="footer__link" href="comitets.html">Комитеты</a></li>
+                                    <li><a class="footer__link" href="contacts.html">Контакты</a></li>
+                                    <li><a class="footer__link" href="partners.html">Партнеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Членство</h3>
+                                </div>
+
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">Преимущества</a></li>
+                                    <li><a class="footer__link" href="about.html">РОКХ в вашем городе</a></li>
+                                    <li><a class="footer__link">Внести членский взнос</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Обучение</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="events.html">Онлайн-обучение</a></li>
+                                    <li><a class="footer__link" href="events.html">Мероприятия</a></li>
+                                    <li><a class="footer__link" href="events.html">Курсы повышения квалификации</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <span class="footer__left-big"><a>+7(495)230-10-34</a></span>
+                            <ul class="footer__left-list">
+                                <li>Фрунзенская</li>
+                                <li>Москва, ул.Погодинская, д.1, стр.1</li>
+                                <li><a class="footer__link">info@siterscs.com</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-personal">
+                            <div class="footer__left-personal-title">
+                                <h3>Обработка персональных данных</h3>
+                            </div>
+
+                            <p><a class="footer__link">Политика в отношении обработки персональных данных
+                                    Согласие на обработку персональных данных</a></p>
+                        </div>
+
+                        <span class="footer__right-date">© 2014 - 2022 Российское общество колоректальных
+                            хирургов</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+  
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/validate/jquery.validate.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

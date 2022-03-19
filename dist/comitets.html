@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header__bg-inner">
+                <img class="header__bg" src="./images/header-bg.jpg" width="1400" height="200" alt="bg">
+            </div>
+
+
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="header__top">
+                        <a href="index.html"><img class="header__top-logo" src="./images/header-logo.png" width="184" height="68" alt="logo"></a>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="Поиск">
+                        </div>
+                        <div class="header__top-acc">
+                            <a data-fancybox data-src="#login" href=""><img src="./images/login.svg" alt="login"></a>
+                        </div>
+                    </div>
+                    <div class="search active container">
+                        <input type="text" name="search" placeholder="Поиск">
+                    </div>
+
+                    <div class="header__bottom">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header__menu-close">
+
+                        </div>
+                        <nav class="header__bottom-menu">
+                            <ul class="header__bottom-list">
+                                <li><a class="header__link" href="about.html">о нас</a></li>
+                                <li><a class="header__link" href="members.html">стать членом</a></li>
+                                <li><a class="header__link" href="comitets.html">комитеты</a></li>
+                                <li><a class="header__link" href="events.html">мероприятия</a></li>
+                                <li class="header__bottom-num"><a class="header__link" href="index.html">рокх</a></li>
+                                <li><a class="header__link" href="base.html">база знаний</a></li>
+                                <li><a class="header__link" href="news.html">новости</a></li>
+                                <li><a class="header__link" href="partners.html">партнеры</a></li>
+                                <li><a class="header__link" href="contacts.html">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------ POPUP------------------------>
+            <div class="header-popup" id="login">
+                <form action="" method="POST">
+                    <span class="header-popup__title">Для входа введите e-mail и пароль</span>
+                    <div class="header-popup__email">
+                        <label for="userEmail">Email
+                            <input name="email" type="email" id="userEmail" required>
+                        </label>
+                    </div>
+
+                    <div class="header-popup__pass">
+                        <label for="userPass">Пароль
+                            <input name="password" type="password" id="userPass" required>
+                        </label>
+                    </div>
+                    <div class="header-popup__check">
+                        <div class="header-popup__check-input">
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </div>
+                        <span><a>Я забыл пароль</a></span>
+                    </div>
+                    <button class="header-popup__btn" type="submit">Вход</button>
+
+                    <div class="header-popup__social">
+                        <div class="header-popup__social-reg">
+                            <span>Нет учетной записи?</span>
+                            <span><a>Зарегистрируйтесь.</a></span>
+                        </div>
+                        <div class="header-popup__social-comein">
+                            <span> Войти с помощью</span>
+                            <a><img src="./images/facebook.svg" alt="soc"></a>
+                            <a><img src="./images/google.svg" alt="soc"></a>
+                            <a><img src="./images/vk.svg" alt="soc"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+
+        <main class="content comitets-content">
+           
+            <div class="comitets-content__inner container">
+                <div class="comitets-content__left sidebar">
+                    <div class="comitets-content__left-menu sidebar-menu">
+                        <div class="comitets-menu__logo sidebar-menu__logo">
+                            <img src="./images/color-logo.svg" alt="logo">
+                        </div>
+                        <div class="comitets-menu__nav sidebar-menu__nav">
+                            <ul class="comitets-menu__list sidebar-menu__list">
+                                <li class="">
+                                    
+                                    <a class="comitets-menu__first sidebar-menu__first" href="#comitets-first">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.5468 13.9452C10.5555 13.5593 10.7224 13.3675 10.7224 12.9492C11.4331 12.7838 12.7547 12.0116 14.1208 12.0116C15.7318 12.0116 16.963 12.7197 17.058 14.2346C17.2027 16.5413 15.5856 19.2026 15.5856 21.5624C15.5856 23.2537 18.1681 22.2799 18.3396 22.2656C18.2642 22.5886 18.1806 22.9386 18.1052 23.2616L16.6819 23.7719C14.558 24.6058 11.7135 24.1246 11.7244 21.7384C11.7267 21.2873 11.8232 20.719 11.9181 20.2389L12.6353 17.6161C12.9085 16.6736 14.1035 13.6524 12.1872 13.6524C10.9493 13.6524 11.4298 13.7394 10.5468 13.9452ZM14.4916 30C6.1181 29.7483 0 22.9552 0 14.59C0 6.12979 7.21209 0 15.41 0C23.912 0 30 7.22716 30 15.41C30 23.946 22.734 30 14.4916 30ZM16.5236 10.0196C15.7748 10.0196 15.2947 9.96571 14.691 9.39102C13.7964 8.53972 13.8906 7.11524 14.723 6.40262C15.439 5.78949 16.5044 5.59919 17.3666 6.01259C17.584 6.11697 17.8154 6.30163 17.9756 6.4584C18.7896 7.25467 18.8582 8.47528 17.9744 9.36125C17.6406 9.69588 17.1639 10.02 16.5236 10.02V10.0196Z"
+                                            fill="" />
+                                    </svg>
+                                        Информация
+                                    </a>
+                                </li>
+                                <li>
+                                 
+    
+                                    <a class="comitets-menu__second sidebar-menu__second" href="#comitets-second">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_337_559)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M-5.36755e-05 24.1407C0.259983 24.5289 2.46086 26.4312 2.46086 26.6015C2.46086 27.0483 1.93353 29.3143 1.93353 29.9414C2.37489 29.8386 4.77082 28.4179 4.98039 28.4179L7.26819 29.5872C7.45655 29.6966 7.84257 29.9211 8.08592 29.9414L7.58349 27.1623C7.49923 26.6714 7.39862 26.6546 7.71775 26.3508C8.0721 26.0133 9.79415 24.3897 9.96089 24.1406L7.20369 23.7336C6.30594 23.6101 6.63191 23.8693 5.70311 22.0116L5.17736 20.9553C5.06273 20.6942 5.1576 20.6878 4.92184 20.6249L3.53903 23.4609C3.38063 23.7481 3.14699 23.6743 2.76241 23.7389L0.919856 24.0058C0.604761 24.0514 0.277834 24.1174 -0.00012207 24.1406L-5.36755e-05 24.1407ZM7.02635 19.2188H23.0556C23.7579 19.2188 22.8234 16.0712 22.7177 15.7947C22.3351 14.7932 21.7504 13.8611 21.0316 13.1464C19.9704 12.0913 19.8538 12.003 18.5303 11.3088C18.1255 11.0964 18.2008 11.1037 17.8215 11.2791C16.181 12.0379 13.9712 12.0479 12.3171 11.3066C11.9101 11.1242 11.9967 11.0781 11.6061 11.2791C9.06171 12.5893 7.50593 14.4328 6.92122 17.3964C6.86617 17.6762 6.88217 18.0143 6.82739 18.3668C6.77842 18.681 6.63718 19.2188 7.02635 19.2188ZM15.041 -0.000107351C14.4088 -0.000107351 13.5635 0.221218 13.1043 0.434815C11.08 1.37709 9.94482 3.53768 10.4415 5.74423C11.0247 8.33551 13.6117 9.90968 16.0429 9.34358C16.8862 9.14722 17.7795 8.67645 18.3769 8.07909C18.6694 7.7865 19.1675 7.09099 19.3428 6.67344C20.8063 3.18866 18.1344 -0.000244141 15.0409 -0.000244141L15.041 -0.000107351ZM10.0195 24.1407C10.2098 24.4248 10.8334 24.9839 11.1181 25.2685C11.5125 25.6629 11.8608 25.9675 12.2625 26.3507C12.6507 26.7208 12.4197 27.0229 12.2378 28.1167L11.8945 30C12.159 29.9383 12.4505 29.7525 12.681 29.6146L14.9999 28.4445L17.3244 29.609C17.5937 29.7541 17.7923 29.927 18.1054 30L17.6028 27.2213C17.499 26.6586 17.3778 26.6434 17.9741 26.1186C18.099 26.0085 18.141 26.0013 18.2673 25.8844C18.584 25.5916 19.6896 24.3354 19.9804 24.2577L17.2017 23.7552C16.3144 23.6328 16.7043 23.9752 15.7421 22.0507C15.5761 21.7186 15.1286 20.9256 15.0586 20.625L13.5594 23.4618C13.4589 23.6589 13.5107 23.6438 13.2717 23.7014L10.0195 24.1406V24.1407ZM20.039 24.1407C20.092 24.3391 20.9257 25.0566 21.1376 25.2685C21.521 25.6519 21.8437 26.0282 22.2761 26.3566C22.6764 26.6605 22.4204 27.1348 22.2573 28.1167C22.2095 28.4047 21.993 29.8354 21.914 30C22.3016 29.9097 23.0731 29.4198 23.4765 29.2187C25.4776 28.2213 24.5474 28.2143 26.5625 29.2187C26.966 29.4198 27.7374 29.9096 28.125 30C28.0032 29.7459 27.8553 28.5045 27.7786 28.1199C27.7169 27.8105 27.6631 27.4539 27.6142 27.1708C27.4657 26.3111 27.502 26.6706 28.3448 25.8251L29.7327 24.4592C29.9019 24.3327 29.9428 24.3551 30.0001 24.1406L26.7482 23.7011C26.3739 23.6204 26.4017 23.3751 26.1136 22.7536C25.9951 22.4977 25.8889 22.3051 25.7618 22.0508C25.5958 21.7187 25.1482 20.9256 25.0782 20.625L23.5791 23.4619C23.4425 23.7297 23.4794 23.6791 22.8346 23.7721L20.9867 24.0335C20.6877 24.0757 20.399 24.1407 20.0391 24.1407H20.039Z" fill=""/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_337_559">
+                                            <rect width="30" height="30.0001" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                        Эксперты
+                                    </a>
+                                </li>
+                                <li class="sidebar-menu__list-none">
+                                  
+    
+                                    <a class="comitets-menu__third sidebar-menu__third" href="#comitets-third">
+                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="#B8BEC8" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="1" fill-rule="evenodd" clip-rule="evenodd" d="M4.57037 19.9218H11.836C13.2279 19.9218 13.2279 21.6797 11.836 21.6797H4.57037C3.17854 21.6797 3.17854 19.9218 4.57037 19.9218ZM16.9923 5.85925H22.3244L17.0069 0.512642L16.9923 5.85925ZM15.9962 17.578C15.9962 19.131 16.6205 20.2124 17.4851 21.2454C17.6101 21.3947 17.6791 21.4071 17.8273 21.5476C18.5848 22.2659 19.9311 22.8513 21.0353 22.8513C22.4718 22.8513 23.2129 22.6528 24.3165 21.9139C24.5674 22.082 27.2976 24.8659 27.7589 25.3269C28.0614 25.6294 28.597 26.3083 29.1211 26.3083C29.5726 26.3083 30 25.9481 30 25.3709C30 24.8098 29.391 24.3811 29.0771 24.0672C28.6161 23.6061 25.8322 20.8759 25.6641 20.6248C25.7192 20.4191 25.9169 20.1775 26.0174 19.9819C26.1214 19.7789 26.227 19.4934 26.3022 19.2705C26.8879 17.5352 26.552 15.596 25.4119 14.256C25.1245 13.9183 24.795 13.5605 24.4231 13.3112C24.1288 13.1138 23.9351 12.9934 23.6135 12.8317C21.8832 11.9617 19.7286 12.1676 18.1799 13.3168C17.6722 13.6934 17.27 14.0917 16.9087 14.6239C16.382 15.4002 15.9959 16.5347 15.9959 17.5783L15.9962 17.578ZM4.57037 16.4061H11.836C13.2279 16.4061 13.2279 18.164 11.836 18.164H4.57037C3.17854 18.164 3.17854 16.4061 4.57037 16.4061ZM4.57037 12.8904H11.836C13.2279 12.8904 13.2279 14.6483 11.836 14.6483H4.57037C3.17854 14.6483 3.17854 12.8904 4.57037 12.8904ZM4.57037 9.3747H14.1798C15.5717 9.3747 15.5717 11.1326 14.1798 11.1326H4.57037C3.17854 11.1326 3.17854 9.3747 4.57037 9.3747ZM0 3.04674V26.953C0 28.5124 1.48764 30 3.047 30H19.8049C21.3674 30 22.8519 28.5132 22.8519 26.953V24.4335C22.6153 24.4387 22.3522 24.5203 22.1397 24.5414C19.9658 24.7592 17.9033 24.0931 16.4506 22.6317C14.9389 21.1109 14.2973 19.5889 14.2973 17.2851C14.2973 15.9721 14.7211 15.0101 15.2546 14.0237C15.3634 13.8228 15.4703 13.669 15.6024 13.4925C16.9283 11.7201 18.986 10.5469 21.2697 10.5469C21.5945 10.5469 21.7538 10.5842 22.0854 10.6101C22.34 10.63 22.592 10.7168 22.8519 10.7226V7.61711H16.2894C15.5989 7.61711 15.2348 7.25294 15.2348 6.56245V0H3.04727C1.48791 0 0.000264658 1.48764 0.000264658 3.047L0 3.04674Z" fill=""/>
+                                            </svg>
+                                            
+                                    Превью комитетов
+                                    </a>
+                                </li>
+                            </ul>
+    
+                        </div>
+    
+                    </div>
+    
+    
+                </div>
+
+                <div class="comitets-content__right">
+                    <div class="comitets-box__first comitets-box__global" id="comitets-first">
+                        <div class="comitets-box__first-title title-comitets-box title-global">
+                            <h2>Комитеты РОКХ</h2>
+                            <ul class="comitets-box__crumbs crumbs">
+                                <li><a href="./index.html">Главная</a></li>
+                                <span>></span>
+                                <li>Комитеты</li>
+                            </ul>
+                        </div>
+                        <div class="comitets-box__first-content" id="vis-1">
+                            <div class="comitets-box__first-minititle comitets-box__global-minititle minititle-global">
+                                <h3>Цели и задачи комитетов</h3>
+                            </div>
+                            <div class="comitets-box__first-text text-global">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum
+                                </p>
+                            </div>
+                            <div class="comitets-box__first-text text-global">
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum
+                                </p>
+                            </div>
+                            <ul class="comitets-box__first-list text-list-global">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+                                </li>
+                                <li>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+
+                                </li>
+                                <li>ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                                </li>
+                                <li>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui </li>
+                                <li>mollit anim id est laborum.</li>
+                            </ul>
+                            <ul class="comitets-box__first-list text-list-global">
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
+                                </li>
+                                <li>dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+
+                                </li>
+                                <li>ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                                </li>
+                                <li>fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui </li>
+                                <li>mollit anim id est laborum.</li>
+                            </ul>
+
+                         
+
+                            <a class="comitets-box__first-btn color-btn">Стать членом РОКХ</a>
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="comitets-box__second comitets-box__global" id="comitets-second">
+                        <div class="comitets-box__second-title title-comitets-box title-global">
+                            <h2>Комитеты РОКХ</h2>
+    
+                        </div>
+                        <div class="comitets-box__second-content" id="vis-2">
+                            <div class="comitets-box__second-minititle comitets-box__global-minititle minititle-global">
+                                <h3>Эксперты РОКХ</h3>
+                            </div>
+
+                            <div class="comitets-box__second-staff item-person">
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Киценко</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Евгений<br>Александрович</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                  <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Коссович</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Михаил<br>Александрович</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Ложкевич</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Александр<br>Александрович</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff9.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Маркарьян</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Даниил<br>Рафаэлевич</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff1.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Нечаенко</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Александр<br>Михайлович</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff11.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Нечай</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Игорь<br>Анатольевич</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff12.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Половинкин</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Вадим<br>Владимирович</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+
+                                <div class="comitets-box__second-staff-person item-person__inner ">
+                                    <a class="comitets-box__second-link"><img src="./images/staff13.png" width="120" height="120" alt="person"></a>
+                                    <a class="comitets-box__second-link">
+                                    <span class="comitets-box__second-staff-name item-person__name">Тулина</span>
+                                    <span class="comitets-box__second-staff-sername item-person__surname">Инна<br>Андреевна</span>
+                                    </a>
+                                    <p>профессор, доктор
+                                        медицинских наук,
+                                        заведующий кафедрой
+                                        хирургии ИКМ,
+                                        директор Первого
+                                        МГМУ им. И.М. Сеченова</p>
+                                </div>
+                            </div>
+                           
+                        
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div class="comitets-box__third comitets-box__global" id="comitets-third">
+                        <div class="comitets-box__first-title title-comitets-box title-global">
+                            <h2>Превью комитетов</h2>
+                            
+                        </div>
+                        <div class="comitets-box__third-content" id="vis-3">
+                            <div class="comitets-box__third-minititle comitets-box__global-minititle minititle-global">
+                                <h3>Комитеты</h3>
+                            </div>
+                         
+                            <div class="comitets-box__third-groups">
+                                <div class="comitets-box__third-photo item-news">
+                                   
+                                    <div class="item-img-news">
+                                        <img src="./images/comitet-1.png" width="408" height="266" alt="image">
+                                    </div>
+
+                                    <div class="comitets-box__third-photo-text item-text-news ">
+                                      <a class="news__link news__item-link" href="science.html">
+                                                <span
+                                                    class="comitets-box__third-photo-title item-title-news">Научный комитет</span>
+                                                <p>Способствовать проведению высококачественных
+                                                    клинических исследований в сфере колопроктологии,
+                                                    малоинвазивной хирургии и онкологии, а также
+                                                    распространять их результаты в среде
+                                                    хирургического научного<br> сообщества</p>
+                                            </a>
+                                      
+                                        <a class="comitets-box__third-photo-btn color-btn" href="science.html">Перейти</a>
+                                    </div>
+                                    
+                                </div>
+                                <div class="comitets-box__third-photo item-news">
+                                   
+                                    <div class="item-img-news">
+                                        <img src="./images/comitet-2.png" width="408" height="266" alt="image">
+                                    </div>
+
+                                    <div class="comitets-box__third-photo-text item-text-news ">
+                                       <a class="news__link news__item-link" href="science.html">
+                                                <span
+                                                    class="comitets-box__third-photo-title item-title-news">Научный комитет</span>
+                                                    <p>Способствовать проведению высококачественных
+                                                        клинических исследований в сфере колопроктологии,
+                                                        малоинвазивной хирургии и онкологии, а также
+                                                        распространять их результаты в среде
+                                                        хирургического научного<br> сообщества</p>
+                                            </a>
+                                      
+                                        <a class="comitets-box__third-photo-btn color-btn" href="science.html">Перейти</a>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="comitets-box__third-photo item-news">
+                                   
+                                    <div class="item-img-news">
+                                        <img src="./images/comitet-3.png" width="408" height="266" alt="image">
+                                    </div>
+
+                                    <div class="comitets-box__third-photo-text item-text-news ">
+                                      <a class="news__link news__item-link" href="science.html">
+                                                <span
+                                                    class="comitets-box__third-photo-title item-title-news">Научный комитет</span>
+                                                    <p>Способствовать проведению высококачественных
+                                                        клинических исследований в сфере колопроктологии,
+                                                        малоинвазивной хирургии и онкологии, а также
+                                                        распространять их результаты в среде
+                                                        хирургического научного<br> сообщества</p>
+                                            </a>
+                                     
+                                        <a class="comitets-box__third-photo-btn color-btn" href="science.html">Перейти</a>
+                                    </div>
+                                  
+                                </div>
+
+                                <div class="comitets-box__third-photo item-news">
+                                   
+                                    <div class="item-img-news">
+                                        <img src="./images/comitet-4.png" width="408" height="266" alt="image">
+                                    </div>
+
+                                    <div class="comitets-box__third-photo-text item-text-news ">
+                                      <a class="news__link news__item-link" href="science.html">
+                                                <span
+                                                    class="comitets-box__third-photo-title item-title-news">Научный комитет</span>
+                                                    <p>Способствовать проведению высококачественных
+                                                        клинических исследований в сфере колопроктологии,
+                                                        малоинвазивной хирургии и онкологии, а также
+                                                        распространять их результаты в среде
+                                                        хирургического научного<br> сообщества</p>
+                                            </a>
+                                       
+                                        <a class="comitets-box__third-photo-btn color-btn" href="science.html">Перейти</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+                </div>
+            </div>
+
+                
+            <div class="arrow">
+            </div>
+        </main>
+
+
+
+
+        <footer class="footer ">
+            <img class="footer__bg" src="./images/footer-bg.jpg" width="1440" height="379" alt="footer-bg">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-items">
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title ">
+                                    <h3>Общество</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">О РОКХ</a></li>
+                                    <li><a class="footer__link" href="about.html">Цель</a></li>
+                                    <li><a class="footer__link" href="about.html">Струтура</a></li>
+                                    <li><a class="footer__link" href="comitets.html">Комитеты</a></li>
+                                    <li><a class="footer__link" href="contacts.html">Контакты</a></li>
+                                    <li><a class="footer__link" href="partners.html">Партнеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Членство</h3>
+                                </div>
+
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">Преимущества</a></li>
+                                    <li><a class="footer__link" href="about.html">РОКХ в вашем городе</a></li>
+                                    <li><a class="footer__link">Внести членский взнос</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Обучение</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="events.html">Онлайн-обучение</a></li>
+                                    <li><a class="footer__link" href="events.html">Мероприятия</a></li>
+                                    <li><a class="footer__link" href="events.html">Курсы повышения квалификации</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <span class="footer__left-big"><a>+7(495)230-10-34</a></span>
+                            <ul class="footer__left-list">
+                                <li>Фрунзенская</li>
+                                <li>Москва, ул.Погодинская, д.1, стр.1</li>
+                                <li><a class="footer__link">info@siterscs.com</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-personal">
+                            <div class="footer__left-personal-title">
+                                <h3>Обработка персональных данных</h3>
+                            </div>
+
+                            <p><a class="footer__link">Политика в отношении обработки персональных данных
+                                    Согласие на обработку персональных данных</a></p>
+                        </div>
+
+                        <span class="footer__right-date">© 2014 - 2022 Российское общество колоректальных
+                            хирургов</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/validate/jquery.validate.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+</html>

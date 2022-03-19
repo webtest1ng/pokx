@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="libs/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header ">
+            <div class="header__bg-inner">
+                <img class="header__bg" src="./images/header-bg.jpg" width="1400" height="200" alt="bg">
+            </div>
+
+
+            <div class="container">
+                <div class="header__inner">
+
+                    <div class="header__top">
+                        <a href="index.html"><img class="header__top-logo" src="./images/header-logo.png" width="184" height="68" alt="logo"></a>
+                        <div class="search">
+                            <input type="text" name="search" placeholder="Поиск">
+                        </div>
+                        <div class="header__top-acc">
+                            <a data-fancybox data-src="#login" href=""><img src="./images/login.svg" alt="login"></a>
+                        </div>
+                    </div>
+                    <div class="search active container">
+                        <input type="text" name="search" placeholder="Поиск">
+                    </div>
+
+                    <div class="header__bottom">
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                        <div class="header__menu-close">
+
+                        </div>
+                        <nav class="header__bottom-menu">
+                            <ul class="header__bottom-list">
+                                <li><a class="header__link" href="about.html">о нас</a></li>
+                                <li><a class="header__link" href="members.html">стать членом</a></li>
+                                <li><a class="header__link" href="comitets.html">комитеты</a></li>
+                                <li><a class="header__link" href="events.html">мероприятия</a></li>
+                                <li class="header__bottom-num"><a class="header__link" href="index.html">рокх</a></li>
+                                <li><a class="header__link" href="base.html">база знаний</a></li>
+                                <li><a class="header__link" href="news.html">новости</a></li>
+                                <li><a class="header__link" href="partners.html">партнеры</a></li>
+                                <li><a class="header__link" href="contacts.html">контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+            <!------------------------ POPUP------------------------>
+            <div class="header-popup" id="login">
+                <form action="" method="POST">
+                    <span class="header-popup__title">Для входа введите e-mail и пароль</span>
+                    <div class="header-popup__email">
+                        <label for="userEmail">Email
+                            <input name="email" type="email" id="userEmail" required>
+                        </label>
+                    </div>
+
+                    <div class="header-popup__pass">
+                        <label for="userPass">Пароль
+                            <input name="password" type="password" id="userPass" required>
+                        </label>
+                    </div>
+                    <div class="header-popup__check">
+                        <div class="header-popup__check-input">
+                            <input type="checkbox">
+                            <span>Запомнить меня</span>
+                        </div>
+                        <span><a>Я забыл пароль</a></span>
+                    </div>
+                    <button class="header-popup__btn" type="submit">Вход</button>
+
+                    <div class="header-popup__social">
+                        <div class="header-popup__social-reg">
+                            <span>Нет учетной записи?</span>
+                            <span><a>Зарегистрируйтесь.</a></span>
+                        </div>
+                        <div class="header-popup__social-comein">
+                            <span> Войти с помощью</span>
+                            <a><img src="./images/facebook.svg" alt="soc"></a>
+                            <a><img src="./images/google.svg" alt="soc"></a>
+                            <a><img src="./images/vk.svg" alt="soc"></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </header>
+
+
+
+        <main class="content events-content bg__inner container">
+           
+            <section class="events-first container">             
+                <div class="events-first__title  minititle-global">
+                    <h3>16-й онлайн онкологический консилиум Клиники колопроктологии и малоинвазивной хирургии ПМГМУ им.И.М.Сеченова.</h3>
+                </div>
+                <ul class="events-first__crumbs crumbs">
+                    <li><a href="./index.html">Главная</a></li>
+                    <span>></span>
+                    <li>Мероприятие</li>
+                </ul>
+                
+            </section>
+
+
+            <section class="events-second">
+                <div class="events-second__inner container">
+                    <div class="events-second__filter">
+                        <div class="events-second__filter-left">
+                            <a href="#ex1" class="events-second__btn active btn">Утро</a>
+                            <a href="#ex2" class="events-second__btn btn">Обед</a>
+                            <a href="#ex3" class="events-second__btn btn">Вечер</a>
+                        </div>
+                        <div class="events-second__filter-right">
+                            <a class="events-second__btn reg-link btn ">Регистрация</a>
+                        </div>
+                    </div>
+
+                    <div class="events-second__persons">
+                        <div class="zg">
+                            <h3 id="ex1">утро</h3>
+                        </div>
+                        <div class="events-second__person">
+                            <div class="events-second__person-time">
+                                <span>08:00 - 09:00</span>
+                            </div>
+                            <div class="events-second__person-face">
+                                <img src="./images/events-person1.png" alt="img">
+                            </div>
+                            <div class="events-second__person-info">
+                                <span class="events-second__person-title">
+                                    Операция Лонго - от истории до современности из уст автора
+                                </span>
+                                <div class="events-second__person-name">
+                                    <span class="events-second__person-bold">Longo</span>
+                                    <span>Antonio</span>
+                                </div>
+                                <div class="events-second__person-text">
+                                    Практолог-хирург. Директор Европейского центра коломпроктологии
+                                    и потологий таза. Изобретатель метода геморроидопексии, метода
+                                    STARR, метода POPS и SIR.
+                                </div>
+                                <span class="events-second__person-city city1">Италия</span>
+                            </div>
+                        </div>
+
+                        <div class="events-second__person">
+                            <div class="events-second__person-time">
+                                <span>08:00 - 09:00</span>
+                            </div>
+                            <div class="events-second__person-face">
+                                <img src="./images/events-person2.png" alt="img">
+                            </div>
+                            <div class="events-second__person-info">
+                                <span class="events-second__person-title">
+                                    Степлерная геморроидопексия - Будьте осторожны!
+                                </span>
+                                <div class="events-second__person-name">
+                                    <span class="events-second__person-bold">Francis</span>
+                                    <span>Seow-Chen</span>
+                                </div>
+                                <div class="events-second__person-text">
+                                    Практолог-хирург. Директор Европейского центра коломпроктологии
+                                    и потологий таза. Изобретатель метода геморроидопексии, метода
+                                    STARR, метода POPS и SIR.
+                                </div>
+                                <span class="events-second__person-city city2">Сингапур</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="events-second__persons">
+                        <div class="zg">
+                            <h3 id="ex2">обед</h3>
+                        </div>
+                        <div class="events-second__person">
+                            <div class="events-second__person-time">
+                                <span>08:00 - 09:00</span>
+                            </div>
+                            <div class="events-second__person-face">
+                                <img src="./images/events-person1.png" alt="img">
+                            </div>
+                            <div class="events-second__person-info">
+                                <span class="events-second__person-title">
+                                    Операция Лонго - от истории до современности из уст автора
+                                </span>
+                                <div class="events-second__person-name">
+                                    <span class="events-second__person-bold">Longo</span>
+                                    <span>Antonio</span>
+                                </div>
+                                <div class="events-second__person-text">
+                                    Практолог-хирург. Директор Европейского центра коломпроктологии
+                                    и потологий таза. Изобретатель метода геморроидопексии, метода
+                                    STARR, метода POPS и SIR.
+                                </div>
+                                <span class="events-second__person-city city1">Италия</span>
+                            </div>
+                        </div>
+
+                        <div class="events-second__person">
+                            <div class="events-second__person-time">
+                                <span>08:00 - 09:00</span>
+                            </div>
+                            <div class="events-second__person-face">
+                                <img src="./images/events-person2.png" alt="img">
+                            </div>
+                            <div class="events-second__person-info">
+                                <span class="events-second__person-title">
+                                    Степлерная геморроидопексия - Будьте осторожны!
+                                </span>
+                                <div class="events-second__person-name">
+                                    <span class="events-second__person-bold">Francis</span>
+                                    <span>Seow-Chen</span>
+                                </div>
+                                <div class="events-second__person-text">
+                                    Практолог-хирург. Директор Европейского центра коломпроктологии
+                                    и потологий таза. Изобретатель метода геморроидопексии, метода
+                                    STARR, метода POPS и SIR.
+                                </div>
+                                <span class="events-second__person-city city2">Сингапур</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="events-second__persons">
+                        <div class="zg">
+                            <h3 id="ex3">вечер</h3>
+                        </div>
+                        <div class="events-second__person">
+                            <div class="events-second__person-time">
+                                <span>08:00 - 09:00</span>
+                            </div>
+                            <div class="events-second__person-face">
+                                <img src="./images/events-person1.png" alt="img">
+                            </div>
+                            <div class="events-second__person-info">
+                                <span class="events-second__person-title">
+                                    Операция Лонго - от истории до современности из уст автора
+                                </span>
+                                <div class="events-second__person-name">
+                                    <span class="events-second__person-bold">Longo</span>
+                                    <span>Antonio</span>
+                                </div>
+                                <div class="events-second__person-text">
+                                    Практолог-хирург. Директор Европейского центра коломпроктологии
+                                    и потологий таза. Изобретатель метода геморроидопексии, метода
+                                    STARR, метода POPS и SIR.
+                                </div>
+                                <span class="events-second__person-city city1">Италия</span>
+                            </div>
+                        </div>
+
+                        <div class="events-second__person">
+                            <div class="events-second__person-time">
+                                <span>08:00 - 09:00</span>
+                            </div>
+                            <div class="events-second__person-face">
+                                <img src="./images/events-person2.png" alt="img">
+                            </div>
+                            <div class="events-second__person-info">
+                                <span class="events-second__person-title">
+                                    Степлерная геморроидопексия - Будьте осторожны!
+                                </span>
+                                <div class="events-second__person-name">
+                                    <span class="events-second__person-bold">Francis</span>
+                                    <span>Seow-Chen</span>
+                                </div>
+                                <div class="events-second__person-text">
+                                    Практолог-хирург. Директор Европейского центра коломпроктологии
+                                    и потологий таза. Изобретатель метода геморроидопексии, метода
+                                    STARR, метода POPS и SIR.
+                                </div>
+                                <span class="events-second__person-city city2">Сингапур</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+
+            <section class="events-third events-third-slide">
+
+                <div class="container">
+                    <div class="events-third__inner">
+
+                        <div class="events-third__title">
+                            <h2>Спонсоры</h2>
+                        </div>
+
+                        <div class="events-third__items">
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="events-third">
+
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="events-third">
+                                        <!-- <img src="./images/events-third-4.png" width="86" height="73" alt="events-third"> -->
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+
+
+
+
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="events-third__items-slide">
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-1.png" width="92" height="100" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Министерство<br> Здравохранения<br> Российской Федерации
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-2.png" width="161" height="35" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общероссийская<br> социальная сеть
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-3.png" width="96" height="95" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общество врачей<br> России
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+
+                                        <img src="./images/partners-4.png" width="86" height="73" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Всероссийская<br>
+                                        организация<br>
+                                        “Руки помощи”
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="events-third__item">
+                                <a class="events-third__link" href="#">
+                                    <div class="events-third__item-img">
+                                        <img src="./images/partners-5.png" width="99" height="50" alt="events-third">
+                                    </div>
+                                    <span class="events-third__item-text">
+                                        Общественная организация<br>
+                                        “Помоги ближнему”
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="events-third__btn reg-link btn">Регистрация</a>
+                </div>
+            </section>
+
+
+
+            <section class="events-fourth">
+                
+                <div class="container">
+                    <div class="events-fourth__title minititle-global">
+                        <h3>Регистрация</h3>
+                    </div>
+                    <div class="events-fourth__form reg-form" id="login">
+                        <form method="POST" id="regForm">
+                            <span class="reg-form__title">Для входа введите e-mail и пароль</span>
+                            <div class="reg-form__surname reg-form__field">
+                                <label for="regSurname">Фамилия
+                                    <input name="surname" type="text" id="regSurname" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__name reg-form__field">
+                                <label for="regName">Имя
+                                    <input name="name" type="text" id="regName" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__name reg-form__field">
+                                <label for="regPatron">Отчество
+                                    <input name="patronymic" type="text" id="regPatron" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__email reg-form__field">
+                                <label for="regEmail">Email
+                                    <input name="email" type="email" id="regEmail" required>
+                                </label>
+                            </div>
+
+                            <div class="reg-form__tel reg-form__field">
+                                <label for="regTel">Мобильный телефон
+                                    <input name="tel" type="tel" id="regTel" required>
+                                </label>
+                            </div>
+
+                            <div class="reg-form__pass reg-form__field">
+                                <label for="regPass">Пароль
+                                    <input name="password" type="password" id="regPass" required>
+                                </label>
+                            </div>
+                            <div class="reg-form__check">
+                                <div class="reg-form__check-input">
+                                    <input type="checkbox">
+                                    <span>Я даю согласие на <a class="reg-form__link">обработку персональных
+                                            данных</a></span>
+                                </div>
+                            </div>
+                            <button class="reg-form__btn" type="submit">Регистрация</button>
+
+                            <div class="reg-form__social">
+                                <div class="reg-form__social-reg">
+                                    <span>Нет учетной записи?</span>
+                                    <span><a>Зарегистрируйтесь.</a></span>
+                                </div>
+                                <div class="reg-form__social-comein">
+                                    <span> Войти с помощью</span>
+                                    <a><img src="./images/facebook.svg" alt="soc"></a>
+                                    <a><img src="./images/google.svg" alt="soc"></a>
+                                    <a><img src="./images/vk.svg" alt="soc"></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+
+
+
+
+
+
+
+
+        <footer class="footer">
+            <img class="footer__bg" src="./images/footer-bg.jpg" width="1440" height="379" alt="footer-bg">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__left-items">
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Общество</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">О РОКХ</a></li>
+                                    <li><a class="footer__link" href="about.html">Цель</a></li>
+                                    <li><a class="footer__link" href="about.html">Струтура</a></li>
+                                    <li><a class="footer__link" href="comitets.html">Комитеты</a></li>
+                                    <li><a class="footer__link" href="contacts.html">Контакты</a></li>
+                                    <li><a class="footer__link" href="partners.html">Партнеры</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Членство</h3>
+                                </div>
+
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="about.html">Преимущества</a></li>
+                                    <li><a class="footer__link" href="about.html">РОКХ в вашем городе</a></li>
+                                    <li><a class="footer__link">Внести членский взнос</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer__left-item">
+                                <div class="footer__left-item-title">
+                                    <h3>Обучение</h3>
+                                </div>
+                                <ul class="footer__left-item-list">
+                                    <li><a class="footer__link" href="events.html">Онлайн-обучение</a></li>
+                                    <li><a class="footer__link" href="events.html">Мероприятия</a></li>
+                                    <li><a class="footer__link" href="events.html">Курсы повышения квалификации</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="div">
+                            <span class="footer__left-big"><a>+7(495)230-10-34</a></span>
+                            <ul class="footer__left-list">
+                                <li>Фрунзенская</li>
+                                <li>Москва, ул.Погодинская, д.1, стр.1</li>
+                                <li><a class="footer__link">info@siterscs.com</a></li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                    <div class="footer__right">
+                        <div class="footer__right-personal">
+                            <div class="footer__left-personal-title">
+                                <h3>Обработка персональных данных</h3>
+                            </div>
+
+                            <p><a class="footer__link">Политика в отношении обработки персональных данных
+                                    Согласие на обработку персональных данных</a></p>
+                        </div>
+
+                        <span class="footer__right-date">© 2014 - 2022 Российское общество колоректальных
+                            хирургов</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+    <script src="libs/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libs/validate/jquery.validate.min.js"></script>
+    <script src="libs/slick/slick.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
